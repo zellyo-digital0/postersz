@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="description" content="Web Content">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="author">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="content-script-type" content="text/javascript">
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/fav-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./img/fav-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/fav-icon.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./img/fav-icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/fav-icon.png">
+
+  <!-- google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Custom css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/media.css" />
+  <title>Postersz</title>
+</head>
+
+<body>
+
+
+  <!-- wrapper start  -->
+  <div class="wrapper relative ">
+
+
+    <div class="navbar-expand-lg">
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header bg-transparent">
+          <button type="button" class="btn-close bg-transparent" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <!-- Left side bar start  -->
+          <aside class="position-fixed top-0 leftSide">
+            <div class="logo">
+              <a href=""><img src="img/logo.png" alt="logo" class="img-fluid"></a>
+            </div>
+            <nav>
+              <!-- nav link start  -->
+              <div class="navWrapper">
+                <div class="navMain ">
+                  <a href="" class="active">
+                    <span>Dashboard</span>
+                  </a>
+                </div>
+              </div>
+              <!-- nav link end  -->
+
+              <!-- nav link start  -->
+              <div class="navWrapper">
+                <div class="navMain">
+                  <a href="">
+                    <span>Lists</span>
+                  </a>
+                </div>
+                <ul class="navItem">
+                  <li><a href="">Users</a></li>
+                  <li><a href="">Companies</a></li>
+                  <li><a href="">Posts</a></li>
+                  <li><a href="">Ads</a></li>
+                  <li><a href="">Listings (Looking For)</a></li>
+                  <li><a href="">Deals</a></li>
+                  <li><a href="">Deal Share</a></li>
+                  <li><a href="">Communities</a></li>
+                  <li><a href="">Comments</a></li>
+                  <li><a href="">Products & Services</a></li>
+                  <li><a href="">Master</a></li>
+                  <li><a href="">Wallets</a></li>
+                  <li><a href="">Transactions</a></li>
+                  <li><a href="">Web Feed Page Ads</a></li>
+                  <li><a href="">LCR</a></li>
+                </ul>
+              </div>
+              <!-- nav link end  -->
+
+              <!-- nav link start  -->
+              <div class="navWrapper">
+                <div class="navMain">
+                  <a href="">
+                    <span>Requests</span>
+                  </a>
+                </div>
+                <ul class="navItem">
+                  <li><a href="">Claimed Business</a></li>
+                  <li><a href="">Ad Requests</a></li>
+                  <li><a href="">New Community Request</a></li>
+                  <li><a href="">Disputes</a></li>
+                </ul>
+              </div>
+              <!-- nav link end  -->
+
+              <!-- nav link start  -->
+              <div class="navWrapper">
+                <div class="navMain">
+                  <a href="">
+                    <span>General Settings</span>
+                  </a>
+                </div>
+                <ul class="navItem">
+                  <li><a href="">Plans</a></li>
+                  <li><a href="">Point Accumulation</a></li>
+                  <li><a href="">Notification Setup</a></li>
+                  <li><a href="">Email Template Setup</a></li>
+                  <li><a href="">FAQs</a></li>
+                </ul>
+              </div>
+              <!-- nav link end  -->
+
+
+            </nav>
+          </aside>
+          <!-- Left side bar end  -->
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- header start  -->
+    <header class="position-sticky top-0 mainHeader">
+      <div class="d-flex w-100 justify-content-between align-self-center align-items-center ">
+        <div class="headerLeft d-lg-block d-none">
+          <ul class="d-flex flex-row">
+            <li><a href="">Lists</a></li>
+            <li>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.0607 13.0607C17.6464 12.4749 17.6464 11.5251 17.0607 10.9393L7.51472 1.3934C6.92893 0.807611 5.97919 0.807611 5.3934 1.3934C4.80761 1.97919 4.80761 2.92893 5.3934 3.51472L13.8787 12L5.3934 20.4853C4.80761 21.0711 4.80761 22.0208 5.3934 22.6066C5.97919 23.1924 6.92893 23.1924 7.51472 22.6066L17.0607 13.0607ZM14 13.5H16V10.5H14V13.5Z"
+                  fill="#979797" />
+              </svg>
+
+            </li>
+            <li><a href="">Users</a></li>
+            <li>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.0607 13.0607C17.6464 12.4749 17.6464 11.5251 17.0607 10.9393L7.51472 1.3934C6.92893 0.807611 5.97919 0.807611 5.3934 1.3934C4.80761 1.97919 4.80761 2.92893 5.3934 3.51472L13.8787 12L5.3934 20.4853C4.80761 21.0711 4.80761 22.0208 5.3934 22.6066C5.97919 23.1924 6.92893 23.1924 7.51472 22.6066L17.0607 13.0607ZM14 13.5H16V10.5H14V13.5Z"
+                  fill="#000000" />
+              </svg>
+
+            </li>
+            <li>User Details</li>
+          </ul>
+        </div>
+        <div class="d-lg-none d-block">
+          <button class="btn  border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+          </button>
+        </div>
+        <div class="headerRight d-flex align-self-center align-items-center">
+          <!-- single dropdown start  -->
+          <div class="dropdown notifications">
+            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="img/notifications.svg" alt="img" class="img-fluid">
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <!-- single dropdown end -->
+          <!-- single dropdown start  -->
+          <div class="dropdown user">
+            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="img/user.png" alt="img" class="img-fluid">
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <!-- single dropdown end -->
+        </div>
+      </div>
+    </header>
+    <!-- header end  -->
+
+    <!-- content area start  -->
+    <div class="">
+      <main class="user-main">
+        <div class="user-row">
+          <!-- avatar card  -->
+          <div class="user-left">
+            <div class="avatar-img">
+              <img src="./img/user/avatar.png" class="img-fluid" alt="Avatar" />
+            </div>
+            <div class="avatar-content">
+              <h1>Aaariana Gerl</h1>
+              <p>Company Owner</p>
+            </div>
+            <div class="avatar-icon-box-wraper">
+              <div class="avatar-icon-box">
+                <div class="avatat-icon-img">
+                  <img src="./img/user/camera.png" alt="" />
+                </div>
+                <div class="avatat-icon-content">
+                  <h2>1.23k</h2>
+                  <p>Total Posts</p>
+                </div>
+              </div>
+              <div class="avatar-icon-box">
+                <div class="avatat-icon-img">
+                  <h3>Ad</h3>
+                </div>
+                <div class="avatat-icon-content">
+                  <h2>568</h2>
+                  <p>Total Ads</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="user-right">
+            <!-- Tab header -->
+            <div class="tab-header">
+              <!-- Tab list -->
+              <ul class="tablist">
+                <li class="active-tablist" data-tab="user-details">
+                  User Details
+                </li>
+                <li data-tab="companies">Companies</li>
+                <li data-tab="posts">Posts</li>
+                <li data-tab="wallet">Wallet</li>
+              </ul>
+              <!-- Edit button -->
+              <div class="edit-btn">
+                <button>
+                  <span class="button-icon"><img src="./img/user/edit.png" class="w-100" alt="" /></span>
+                  <span>Edit</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Tab content (initially, only one should be visible) -->
+            <div id="user-details" class="tab-content">
+              <form class="user-form" action="">
+                <div class="img-upload">
+                  <input type="file" id="imgUpload" class="d-none" />
+                  <label for="imgUpload"><span><img src="./img/user/plus.png" alt="" /></span>
+                    <span>Upload Image</span></label>
+                </div>
+                <div class="row" id="user-form-row">
+                  <div class="col-md-6">
+                    <div>
+                      <label for="name">User Name:</label>
+                      <input type="text" name="name" id="name" placeholder="Aaariana Geri" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div>
+                      <label for="email">Email:</label>
+                      <input type="email" name="name" id="email" placeholder="johndoe@companyname.com"
+                        class="form-control" />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div>
+                      <label for="Facebook">Facebook</label>
+                      <input type="url" name="Facebook" id="Facebook" placeholder="www.facebook.com"
+                        class="form-control" />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div>
+                      <label for="Instagram">Instagram</label>
+                      <input type="url" name="Instagram" id="Instagram" placeholder="www.instagram.com"
+                        class="form-control" />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div>
+                      <label for="Twtter">Twtter</label>
+                      <input type="url" name="Twtter" id="Twtter" placeholder="www.twitter.com" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div id="companies" class="tab-content hidden">
+              <div class="table-responsive table-space mt-4">
+                <table class="table">
+                  <thead>
+                    <tr class="table-header">
+                      <th scope="col" class="th-checkbox">
+                        <input type="checkbox" class="chk-box" />
+                      </th>
+                      <th scope="col" class="th-no">
+                        <a href="#" class="userHeading">
+                          ID <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+                      <th scope="col" class="userHeading-size">
+                        <a href="#" class="userHeading">
+                          COMPANY <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+                      <th scope="col">
+                        <a href="#" class="userHeading">
+                          ASSOCIATION <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+                      <th scope="col">
+                        <a href="#" class="userHeading">
+                          EMAIL <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+                      <th scope="col">
+                        <a href="#" class="userHeading">
+                          STATUS <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+                      <th scope="col">
+                        <a href="#" class="userHeading">
+                          JOINED <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+                      <th scope="col">
+                        <div class="userHeading">ACTION</div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="first-row">
+                      <th scope="row justify-content-center align-items-center">
+                        <input type="checkbox" class="chk-box" />
+                      </th>
+                      <td>
+                        <div class="userNo">01</div>
+                      </td>
+                      <td>
+                        <div class="d-flex flex-row align-items-center userName">
+                          <img src="./img/list/list-users.png" alt="" />Jordan
+                          Stevenson
+                        </div>
+                      </td>
+                      <td>
+                        <div class="userNo">Owner</div>
+                      </td>
+                      <td>
+                        <a href="mailto:Jaylon_Bartell3@gmail.com" class="userNo">Jaylon_Bartell3@gmail.com</a>
+                      </td>
+                      <td>
+                        <div class="userActive">Active</div>
+                      </td>
+                      <td>
+                        <div class="userNo">7/29/2024</div>
+                      </td>
+                      <td class="d-flex flex-row">
+                        <button class="btn btn-crud">
+                          <img src="./img/list/view.svg" alt="" />
+                        </button>
+                        <button class="btn btn-crud">
+                          <img src="./img/list/edit.svg" alt="" />
+                        </button>
+                        <button class="btn btn-crud">
+                          <img src="./img/list/delete.svg" alt="" />
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="second-row">
+                      <th scope="row justify-content-center align-items-center">
+                        <input type="checkbox" class="chk-box" />
+                      </th>
+                      <td>
+                        <div class="userNo">01</div>
+                      </td>
+                      <td>
+                        <div class="d-flex flex-row align-items-center userName">
+                          <img src="./img/list/list-users.png" alt="" />Jordan
+                          Stevenson
+                        </div>
+                      </td>
+                      <td>
+                        <div class="userNo">Manager</div>
+                      </td>
+                      <td>
+                        <a href="mailto:Jaylon_Bartell3@gmail.com" class="userNo">Jaylon_Bartell3@gmail.com</a>
+                      </td>
+
+                      <td>
+                        <div class="userActive">Active</div>
+                      </td>
+                      <td>
+                        <div class="userNo">7/29/2024</div>
+                      </td>
+                      <td class="d-flex flex-row">
+                        <button class="btn btn-crud">
+                          <img src="./img/list/view.svg" alt="" />
+                        </button>
+                        <button class="btn btn-crud">
+                          <img src="./img/list/edit.svg" alt="" />
+                        </button>
+                        <button class="btn btn-crud">
+                          <img src="./img/list/delete.svg" alt="" />
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- pagination -->
+              <div class="pagination d-flex flex-column flex-md-row justify-content-end align-items-center">
+                <div class="d-flex align-items-center gap-2">
+                  <h4>Rows per page:</h4>
+                  <select name="" id="" class="pagiSelect">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                  </select>
+                </div>
+                <div class="d-flex align-items-center page-no">
+                  <span>1-5</span>
+                  <span>of</span>
+                  <span>13</span>
+                </div>
+                <div>
+                  <a href="#" class="btn btn-pagiBtn"><img src="./img/list/arrow-left.svg" alt="" /></a>
+                  <a href="#" class="btn btn-pagiBtn"><img src="./img/list/arrow-right.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+            <div id="posts" class="tab-content hidden">
+              <div class="table-responsive table-space mt-4">
+                <table class="table">
+                  <thead>
+                    <tr class="table-header">
+                      <th scope="col" class="th-checkbox">
+                        <input type="checkbox" class="chk-box" />
+                      </th>
+                      <th scope="col" class="th-no">
+                        <a href="#" class="userHeading">
+                          NO <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+                      <th scope="col" class="userHeading-size">
+                        <a href="#" class="userHeading">
+                          USERNAME <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+                      <th scope="col">
+                        <a href="#" class="userHeading">
+                          ANONYMOUS <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+                      <th scope="col">
+                        <a href="#" class="userHeading">
+                          COMPANY NAME
+                          <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+                      <th scope="col">
+                        <a href="#" class="userHeading">
+                          VIEW <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+                      <th scope="col">
+                        <a href="#" class="userHeading">
+                          KEYWORD <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+                      <th scope="col">
+                        <a href="#" class="userHeading">
+                          CREATION DATE <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+                      <th scope="col">
+                        <a href="#" class="userHeading">
+                          JOINED <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+                      <th scope="col">
+                        <div class="userHeading">ACTION</div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="first-row">
+                      <th scope="row justify-content-center align-items-center">
+                        <input type="checkbox" class="chk-box" />
+                      </th>
+                      <td>
+                        <div class="userNo">01</div>
+                      </td>
+                      <td>
+                        <div class="d-flex flex-row align-items-center justify-content-between userNms">
+                          Joseph Got <span>v</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="userNo">No</div>
+                      </td>
+                      <td>
+                        <div class="userNo">OZI</div>
+                      </td>
+                      <td>
+                        <div class="userVw d-flex justify-content-center align-items-center">
+                          09
+                        </div>
+                      </td>
+                      <td>
+                        <div class="userCt d-flex justify-content-center align-items-center">
+                          Category
+                        </div>
+                      </td>
+                      <td>
+                        <div class="userActive">Active</div>
+                      </td>
+                      <td>
+                        <div class="userNo">7/29/2024</div>
+                      </td>
+                      <td class="d-flex flex-row">
+                        <button class="btn btn-crud">
+                          <img src="./img/list/view.svg" alt="" />
+                        </button>
+                        <button class="btn btn-crud">
+                          <img src="./img/list/edit.svg" alt="" />
+                        </button>
+                        <button class="btn btn-crud">
+                          <img src="./img/list/delete.svg" alt="" />
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="second-row">
+                      <th scope="row justify-content-center align-items-center">
+                        <input type="checkbox" class="chk-box" />
+                      </th>
+                      <td>
+                        <div class="userNo">01</div>
+                      </td>
+                      <td>
+                        <div class="d-flex flex-row align-items-center justify-content-between userNms">
+                          Joseph Got <span>v</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="userNo">No</div>
+                      </td>
+                      <td>
+                        <div class="userNo">OZI</div>
+                      </td>
+                      <td>
+                        <div class="userVw d-flex justify-content-center align-items-center">
+                          09
+                        </div>
+                      </td>
+                      <td>
+                        <div class="userCt d-flex justify-content-center align-items-center">
+                          Category
+                        </div>
+                      </td>
+
+                      <td>
+                        <div class="userActive">Active</div>
+                      </td>
+                      <td>
+                        <div class="userNo">7/29/2024</div>
+                      </td>
+                      <td class="d-flex flex-row">
+                        <button class="btn btn-crud">
+                          <img src="./img/list/view.svg" alt="" />
+                        </button>
+                        <button class="btn btn-crud">
+                          <img src="./img/list/edit.svg" alt="" />
+                        </button>
+                        <button class="btn btn-crud">
+                          <img src="./img/list/delete.svg" alt="" />
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="first-row">
+                      <th scope="row justify-content-center align-items-center">
+                        <input type="checkbox" class="chk-box" />
+                      </th>
+                      <td>
+                        <div class="userNo">01</div>
+                      </td>
+                      <td>
+                        <div class="d-flex flex-row align-items-center justify-content-between userNms">
+                          Joseph Got <span>v</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="userNo">No</div>
+                      </td>
+                      <td>
+                        <div class="userNo">OZI</div>
+                      </td>
+                      <td>
+                        <div class="userVw d-flex justify-content-center align-items-center">
+                          09
+                        </div>
+                      </td>
+                      <td>
+                        <div class="userCt d-flex justify-content-center align-items-center">
+                          Category
+                        </div>
+                      </td>
+                      <td>
+                        <div class="userInactiveRed">Inactive</div>
+                      </td>
+                      <td>
+                        <div class="userNo">7/29/2024</div>
+                      </td>
+                      <td class="d-flex flex-row">
+                        <button class="btn btn-crud">
+                          <img src="./img/list/view.svg" alt="" />
+                        </button>
+                        <button class="btn btn-crud">
+                          <img src="./img/list/edit.svg" alt="" />
+                        </button>
+                        <button class="btn btn-crud">
+                          <img src="./img/list/delete.svg" alt="" />
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- pagination -->
+              <div class="pagination d-flex flex-column flex-md-row justify-content-end align-items-center">
+                <div class="d-flex align-items-center gap-2">
+                  <h4>Rows per page:</h4>
+                  <select name="" id="" class="pagiSelect">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                  </select>
+                </div>
+                <div class="d-flex align-items-center page-no">
+                  <span>1-5</span>
+                  <span>of</span>
+                  <span>13</span>
+                </div>
+                <div>
+                  <a href="#" class="btn btn-pagiBtn"><img src="./img/list/arrow-left.svg" alt="" /></a>
+                  <a href="#" class="btn btn-pagiBtn"><img src="./img/list/arrow-right.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+            <div id="wallet" class="tab-content hidden"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- content area end -->
+
+
+  </div>
+  <!-- wrapper end  -->
+
+
+
+  <!-- JS, Popper.js, and jQuery -->
+  <!-- js -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get all tab elements
+      const tabItems = document.querySelectorAll(".tablist li");
+
+      // Function to handle tab switching
+      function activateTab(clickedTab) {
+        // Remove the 'active-tablist' class from all tabs
+        tabItems.forEach((tab) => tab.classList.remove("active-tablist"));
+
+        // Add 'active-tablist' class to the clicked tab
+        clickedTab.classList.add("active-tablist");
+
+        // Get content related to the clicked tab
+        const tabContentId = clickedTab.getAttribute("data-tab");
+
+        // Hide all tab content
+        const allContent = document.querySelectorAll(".tab-content");
+        allContent.forEach((content) => content.classList.add("hidden"));
+
+        // Show the content related to the active tab
+        document.getElementById(tabContentId).classList.remove("hidden");
+      }
+
+      // Add click event listeners to each tab
+      tabItems.forEach((tab) => {
+        tab.addEventListener("click", function () {
+          activateTab(tab);
+        });
+      });
+
+      // Optional: Activate the first tab by default on page load
+      if (tabItems.length > 0) {
+        activateTab(tabItems[0]);
+      }
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script src="js/main.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
