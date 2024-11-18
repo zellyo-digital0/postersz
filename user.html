@@ -2,30 +2,13 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="description" content="Web Content">
-  <meta name="keywords" content="HTML, CSS, JavaScript">
-  <meta name="author" content="author">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta http-equiv="content-script-type" content="text/javascript">
-  <meta http-equiv="x-dns-prefetch-control" content="on">
-
-
-
-  <!-- google font  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
-
+  <meta charset="UTF-8">
   <!-- Favicons -->
   <link
     href="data:image/png;base64,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"
     rel="icon">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postersz App</title>
   <!-- Vendor CSS Files -->
   <link href="http://postersz.com/admin/admin/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="http://postersz.com/admin/admin/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -41,11 +24,8 @@
   <script type="module" crossorigin src="http://postersz.com/admin/assets/index-39d29437.js"></script>
   <link rel="stylesheet" href="http://postersz.com/admin/assets/index-3f23c353.css">
 
-
-
   <!-- Custom css -->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/media.css" />
+  <link rel="stylesheet" href="css/custom.css" />
 
   <title>Postersz App</title>
 </head>
@@ -700,46 +680,6 @@
 
 
 
-  <!-- JS, Popper.js, and jQuery -->
-  <!-- js -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      // Get all tab elements
-      const tabItems = document.querySelectorAll(".tablist li");
-
-      // Function to handle tab switching
-      function activateTab(clickedTab) {
-        // Remove the 'active-tablist' class from all tabs
-        tabItems.forEach((tab) => tab.classList.remove("active-tablist"));
-
-        // Add 'active-tablist' class to the clicked tab
-        clickedTab.classList.add("active-tablist");
-
-        // Get content related to the clicked tab
-        const tabContentId = clickedTab.getAttribute("data-tab");
-
-        // Hide all tab content
-        const allContent = document.querySelectorAll(".tab-content");
-        allContent.forEach((content) => content.classList.add("hidden"));
-
-        // Show the content related to the active tab
-        document.getElementById(tabContentId).classList.remove("hidden");
-      }
-
-      // Add click event listeners to each tab
-      tabItems.forEach((tab) => {
-        tab.addEventListener("click", function () {
-          activateTab(tab);
-        });
-      });
-
-      // Optional: Activate the first tab by default on page load
-      if (tabItems.length > 0) {
-        activateTab(tabItems[0]);
-      }
-    });
-  </script>
-  <!-- JS, Popper.js, and jQuery -->
   <script type="application/javascript"
     src="http://postersz.com/admin/admin/assets/vendor/apexcharts/apexcharts.min.js"></script>
   <script type="application/javascript"
@@ -762,6 +702,8 @@
   <!-- Template Main JS File -->
   <script type="application/javascript" src="http://postersz.com/admin/admin/assets/js/main.js"></script>
 
+  <!-- custom js  -->
+  <script src="./js/custom.js"></script>
 
 </body>
 

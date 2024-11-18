@@ -1368,3 +1368,402 @@ input[type='checkbox']:focus {
   margin-bottom: 50px;
 }
 /* ==user list end== */
+@media (max-width: 1540px) {
+  .wrapper .leftSide .logo a img {
+    width: 110px;
+  }
+  .wrapper .leftSide .logo {
+    padding-top: 21px;
+    padding-left: 18px;
+    padding-right: 10px;
+    padding-bottom: 18px;
+  }
+  .avatar-icon-box {
+    width: 150px;
+  }
+  .avatar-icon-box-wraper {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .wrapper header .headerLeft ul li {
+    font-size: 20px;
+  }
+  .wrapper header .headerLeft ul li svg {
+    width: 18px;
+  }
+  .user-form input {
+    height: 48px;
+    font-size: 14px;
+  }
+  .user-form label {
+    font-size: 14px;
+  }
+  .wrapper .leftSide nav .navWrapper .navMain a {
+    font-size: 14px;
+    padding-left: 30px;
+  }
+  .wrapper .leftSide nav .navWrapper .navItem {
+    padding-left: 40px;
+  }
+  .wrapper .leftSide nav .navWrapper .navItem li a {
+    font-size: 12px;
+  }
+  .wrapper .leftSide nav .navWrapper .navItem {
+    gap: 10px;
+  }
+  .btn-txt {
+    font-size: 16px;
+  }
+  .userNms {
+    padding: 4px 6px;
+  }
+  .tablist li::after {
+    bottom: -8px;
+    height: 3px;
+  }
+  .edit-btn button {
+    font-size: 14px;
+  }
+  .tablist li {
+    font-size: 14px;
+  }
+  .first-row td,
+  .table-header th,
+  .first-row th,
+  .second-row td,
+  .second-row th {
+    font-size: 12px;
+  }
+  .pagination h4,
+  .pagiSelect,
+  .pagiSelect:focus,
+  .page-no,
+  .form-control,
+  .btn-cst,
+  .custom-dropdown-btn {
+    font-size: 14px;
+  }
+}
+
+/* ===Responsive styles=== */
+@media (max-width: 75rem) {
+  .userName {
+    min-width: 190px;
+  }
+  .td-num {
+    min-width: 160px;
+  }
+  .userNms {
+    min-width: 100px;
+  }
+} /* 1200px */
+@media (max-width: 48rem) {
+  /* 768px */
+  .list-users {
+    padding: 16px;
+  }
+
+  .table-responsive {
+    margin: 0 -16px;
+    padding: 0 16px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .btn-crud {
+    padding: 6px;
+    margin: 0 2px;
+  }
+
+  .userName img {
+    width: 24px;
+    height: 24px;
+  }
+  .userName {
+    min-width: 190px;
+  }
+  .list-users-wraper {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 36rem) {
+  /* 576px */
+  .userName {
+    min-width: 190px;
+  }
+  .td-num {
+    min-width: 160px;
+  }
+  .th-no {
+    min-width: 50px;
+  }
+  .th-checkbox {
+    min-width: 60px;
+  }
+  .pagination {
+    padding-top: 16px;
+    gap: 6px;
+  }
+  .btn-pagiBtn {
+    padding: 4px 14px;
+  }
+  .filter {
+    padding: 16px 16px;
+  }
+  .btn-txt {
+    font-size: 16px;
+  }
+  .addUser {
+    width: 100%;
+  }
+  .btn-cst {
+    margin: 12px 0 0 0;
+  }
+  .userList {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  .chk-box {
+    margin-left: 12px;
+  }
+  .from-row {
+    gap: 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+@media (forced-colors: active) {
+  .userActive,
+  .userInactive {
+    border: 1px solid currentColor;
+  }
+
+  input[type='checkbox'] {
+    border: 1px solid currentColor;
+  }
+}
+
+@media (max-width: 1500px) {
+  .avatar-icon-box-wraper {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+@media (max-width: 1250px) {
+  .wrapper .leftSide nav .navWrapper .navItem {
+    padding-left: 30px;
+  }
+  .avatar-icon-box {
+    width: 100%;
+  }
+
+  .wrapper .leftSide nav .navWrapper .navMain a {
+    padding-left: 30px;
+  }
+
+  .user-row {
+    flex-direction: column;
+  }
+
+  .user-left {
+    width: 100%;
+    box-shadow: 0 0 14px 6px rgb(0 0 0 / 4%);
+  }
+  .user-right {
+    width: 100%;
+  }
+
+  .avatar-icon-box-wraper {
+    flex-direction: row;
+  }
+  .avatar-icon-box {
+    width: 50%;
+  }
+  .avatar-icon-box {
+    width: 150px;
+  }
+
+  .user-form {
+    padding: 0 20px 150px;
+  }
+
+  .table-space {
+    padding: 0 0px 300px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .wrapper {
+    padding-left: 0;
+  }
+  .wrapper .leftSide .logo {
+    text-align: center;
+  }
+  .wrapper .leftSide .logo a img {
+    width: 150px;
+  }
+  .wrapper header {
+    padding-left: 16px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 16px;
+    z-index: 999;
+  }
+
+  .wrapper .offcanvas-body {
+    padding: 0;
+  }
+
+  .wrapper .leftSide {
+    width: 100%;
+    height: auto;
+    position: relative !important;
+    overflow: auto;
+  }
+
+  .wrapper .offcanvas-header {
+    z-index: 999;
+    position: absolute;
+    width: 30px;
+    right: 12px;
+    top: 12px;
+    padding: 0;
+  }
+
+  #sub-banner {
+    height: 150px;
+  }
+
+  .registration {
+    margin-top: -50px;
+    padding-bottom: 40px;
+  }
+
+  .user-right {
+    box-shadow: 0 0 14px 6px rgb(0 0 0 / 4%);
+  }
+}
+
+@media (max-width: 767px) {
+  .revenue-row {
+    flex-direction: column;
+  }
+
+  .tablist {
+    gap: 8px;
+  }
+
+  .tablist li {
+    font-size: 14px;
+  }
+
+  .tab-header {
+    padding-bottom: 4px;
+  }
+
+  .edit-btn {
+    width: 72px;
+  }
+
+  .edit-btn button {
+    font-size: 13px;
+  }
+
+  .button-icon {
+    width: 13px;
+  }
+
+  .user-form {
+    padding: 0 0px 20px;
+  }
+
+  .table-space {
+    padding: 0 0px 0px;
+  }
+
+  .single-icon-box {
+    box-shadow: 0 4px 8px 0 rgb(46 38 61 / 24%);
+  }
+
+  .tablist li {
+    padding: 0;
+  }
+
+  .tablist li::after {
+    height: 3px;
+  }
+  .avatar-icon-box-wraper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 575px) {
+  .form-wraper {
+    padding: 40px 20px;
+  }
+
+  .logo-wraper {
+    max-width: 180px;
+    margin: 0 auto 20px;
+  }
+
+  .registration-content h1 {
+    font-size: 20px;
+  }
+
+  .registration-content p {
+    font-size: 14px;
+    margin: 8px 0 0;
+  }
+
+  .form-wraper form {
+    margin-top: 30px;
+  }
+
+  .submit-btn button {
+    margin-top: 30px;
+  }
+
+  .single-icon-box {
+    box-shadow: 0 4px 10px 0 rgb(46 38 61 / 24%);
+  }
+
+  .dashboard-main,
+  .user-main {
+    padding: 16px;
+    background-color: #f9fbfd;
+  }
+
+  .user-left,
+  .user-right {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 412px) {
+  .tablist li:first-child::after,
+  .tablist li::after {
+    bottom: -6px;
+    height: 3px;
+  }
+
+  .tablist {
+    gap: 20px;
+  }
+
+  .tab-header {
+    align-items: baseline;
+    flex-direction: column;
+    gap: 18px;
+  }
+}
