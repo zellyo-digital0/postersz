@@ -167,7 +167,7 @@
               </svg>
 
             </li>
-            <li>User Details</li>
+            <li>Company Details</li>
           </ul>
         </div>
         <div class="d-lg-none d-block">
@@ -214,47 +214,108 @@
     <div class="">
       <main class="user-main">
         <div class="user-row">
+
           <!-- avatar card  -->
           <div class="user-left">
-            <div class="avatar-img">
-              <img src="./img/user/avatar.png" class="img-fluid" alt="Avatar" />
-            </div>
-            <div class="avatar-content">
-              <h1>Aaariana Gerl</h1>
-              <p>Company Owner</p>
-            </div>
-            <div class="avatar-icon-box-wraper">
-              <div class="avatar-icon-box">
-                <div class="avatat-icon-img">
-                  <img src="./img/user/camera.png" alt="" />
+            <div class="pb-2">
+              <div class="avatar-img">
+                <img src="./img/user/avatar.png" class="img-fluid" alt="Avatar" />
+              </div>
+              <div class="avatar-content">
+                <h1>Aaariana Gerl</h1>
+                <p>Company Owner</p>
+              </div>
+              <div class="avatar-icon-box-wraper">
+                <div class="avatar-icon-box">
+                  <div class="avatat-icon-img">
+                    <img src="./img/user/camera.png" alt="" />
+                  </div>
+                  <div class="avatat-icon-content">
+                    <h2>1.23k</h2>
+                    <p>Total Posts</p>
+                  </div>
                 </div>
-                <div class="avatat-icon-content">
-                  <h2>1.23k</h2>
-                  <p>Total Posts</p>
+                <div class="avatar-icon-box">
+                  <div class="avatat-icon-img">
+                    <h3>Ad</h3>
+                  </div>
+                  <div class="avatat-icon-content">
+                    <h2>568</h2>
+                    <p>Total Ads</p>
+                  </div>
                 </div>
               </div>
-              <div class="avatar-icon-box">
-                <div class="avatat-icon-img">
-                  <h3>Ad</h3>
+            </div>
+            <hr class="mt-4 mb-4">
+            <div class="pt-2">
+              <div class="avatar-img">
+                <img src="./img/demo-logo.png" class="img-fluid" alt="Avatar" />
+              </div>
+              <div class="avatar-content">
+                <h1>Aaariana Gerl</h1>
+                <p>Company Owner</p>
+              </div>
+              <div class="avatar-icon-box-wraper">
+                <div class="avatar-icon-box">
+                  <div class="avatat-icon-img">
+                    <img src="./img/user/camera.png" alt="" />
+                  </div>
+                  <div class="avatat-icon-content">
+                    <h2>1.23k</h2>
+                    <p>Total Posts</p>
+                  </div>
                 </div>
-                <div class="avatat-icon-content">
-                  <h2>568</h2>
-                  <p>Total Ads</p>
+                <div class="avatar-icon-box">
+                  <div class="avatat-icon-img">
+                    <h3>Ad</h3>
+                  </div>
+                  <div class="avatat-icon-content">
+                    <h2>568</h2>
+                    <p>Total Ads</p>
+                  </div>
+                </div>
+                <div class="avatar-icon-box">
+                  <div class="avatat-icon-img">
+                    <img src="./img/heroicons_document.svg" alt="" />
+                  </div>
+                  <div class="avatat-icon-content">
+                    <h2>1.23k</h2>
+                    <p>Total Posts</p>
+                  </div>
+                </div>
+                <div class="avatar-icon-box">
+                  <div class="avatat-icon-img">
+                    <img src="./img/ph_hands-clapping-thin.svg" alt="" />
+                  </div>
+                  <div class="avatat-icon-content">
+                    <h2>1.23k</h2>
+                    <p>Total Posts</p>
+                  </div>
                 </div>
               </div>
             </div>
+
+
+
           </div>
+
+
+
+
+
           <div class="user-right">
             <!-- Tab header -->
             <div class="tab-header flex-xl-nowrap flex-wrap gap-4 justify-content-xl-between justify-content-center">
               <!-- Tab list -->
               <ul class="tablist">
-                <li class="active-tablist" data-tab="user-details">
-                  User Details
+                <li class="active-tablist" data-tab="company-details">
+                  Company Details
                 </li>
-                <li data-tab="companies">Companies</li>
+                <li data-tab="locations">Locations</li>
                 <li data-tab="posts">Posts</li>
-                <li data-tab="wallet">Wallet</li>
+                <li data-tab="showcase">Showcase</li>
+                <li data-tab="team">Team</li>
+                <li data-tab="recommends">Recommends</li>
               </ul>
               <!-- Edit button -->
               <div
@@ -267,193 +328,212 @@
             </div>
 
             <!-- Tab content (initially, only one should be visible) -->
-            <div id="user-details" class="tab-content">
-              <form class="user-form" action="">
-                <div class="img-upload">
-                  <input type="file" id="imgUpload" class="d-none" />
-                  <label for="imgUpload"><span><img src="./img/user/plus.png" alt="" /></span>
-                    <span>Upload Image</span></label>
+            <div id="company-details" class="tab-content">
+              <div class="changeLogo">
+                <div class="imgBox">
+                  <img src="./img/demo-logo.png" alt="logo" class="img-fluid">
                 </div>
+                <label for="changeLogoUpload" class="changeLogoUpload">
+                  Change logo
+                  <input type="file" id="changeLogoUpload" class="d-none">
+                </label>
+              </div>
+              <!-- Banner Image: start  -->
+              <div class="bannerImage mb-4">
+                <p>Banner Image:</p>
+                <div class="bannerImageItem row">
+                  <div class="col-lg-4">
+                    <div class="uploadImage">
+                      <img src="./img/upload-image.png" alt="upload-image" class="img-fluid">
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img-upload">
+                      <input type="file" id="imgUpload" class="d-none" />
+                      <label for="imgUpload"><span><img src="./img/user/plus.png" alt="" /></span>
+                        <span>Upload Image</span></label>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img-upload">
+                      <input type="file" id="imgUpload" class="d-none" />
+                      <label for="imgUpload"><span><img src="./img/user/plus.png" alt="" /></span>
+                        <span>Upload Image</span></label>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Banner Image: start  -->
+              <div class="bannerImage mb-4">
+                <p>Listing Image:</p>
+                <div class="bannerImageItem row text-center">
+
+                  <div class="col-lg-2">
+                    <div class="img-upload">
+                      <input type="file" id="imgUpload" class="d-none" />
+                      <label for="imgUpload"><span><img src="./img/user/plus.png" alt="" /></span>
+                        <span>Upload Image <br> (Primary)</span></label>
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="img-upload">
+                      <input type="file" id="imgUpload" class="d-none" />
+                      <label for="imgUpload"><span><img src="./img/user/plus.png" alt="" /></span>
+                        <span>Upload Image</span></label>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-2">
+                    <div class="img-upload">
+                      <input type="file" id="imgUpload" class="d-none" />
+                      <label for="imgUpload"><span><img src="./img/user/plus.png" alt="" /></span>
+                        <span>Upload Image</span></label>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+
+              <form class="user-form ps-0 pb-0" action="">
                 <div class="row" id="user-form-row">
                   <div class="col-md-6">
                     <div>
-                      <label for="name">User Name:</label>
-                      <input type="text" name="name" id="name" placeholder="Aaariana Geri" class="form-control" />
+                      <label for="name">Company Name:</label>
+                      <input type="text" name="name" id="name" placeholder="Postersz" class="form-control" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div>
-                      <label for="email">Email:</label>
+                      <label for="email">Company Email:</label>
                       <input type="email" name="name" id="email" placeholder="johndoe@companyname.com"
                         class="form-control" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div>
-                      <label for="Facebook">Facebook</label>
-                      <input type="url" name="Facebook" id="Facebook" placeholder="www.facebook.com"
+                      <label for="Website">Website:</label>
+                      <input type="url" name="Website" id="Website" placeholder="www.companyname.com"
                         class="form-control" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div>
-                      <label for="Instagram">Instagram</label>
-                      <input type="url" name="Instagram" id="Instagram" placeholder="www.instagram.com"
-                        class="form-control" />
+                      <label for="number">Company Phone 1:</label>
+                      <input type="number" name="number" id="number" placeholder="2222222222" class="form-control" />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div>
+                      <label for="number2">Company Phone 2:</label>
+                      <input type="number" name="number2" id="number2" placeholder="2222222222" class="form-control" />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div>
+                      <label for="Twtter">Company Type:</label>
+                      <input type="text" name="Company" id="Company" placeholder="Retal" class="form-control" />
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div>
+                      <label for="Twtter">About:</label>
+                      <textarea class="form-control" name="" id="" rows="4"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div>
+                      <label for="Twtter">Home Appliances:</label>
+                      <div class="tagsInput">
+                        <input type="text" name="Home" id="Home" class="form-control" />
+                        <div class="tagsInputItem">
+                          <span>Simcha HQ</span> <span>Simcha HQ</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div>
+                      <label for="Twtter">Small Appliances:</label>
+                      <div class="tagsInput">
+                        <input type="text" name="Home" id="Home" class="form-control" />
+                        <div class="tagsInputItem">
+                          <span>Simcha HQ</span> <span>Simcha HQ</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div>
+                      <label for="Twtter">Keywords:</label>
+                      <div class="tagsInput">
+                        <input type="text" name="Home" id="Home" class="form-control" />
+                        <div class="tagsInputItem">
+                          <span>Simcha HQ</span> <span>Simcha HQ</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div>
-                      <label for="Twtter">Twtter</label>
-                      <input type="url" name="Twtter" id="Twtter" placeholder="www.twitter.com" class="form-control" />
+                      <label for="date">Created Date:</label>
+                      <input type="date" name="date" id="date" value="2024-07-20" class="form-control" />
+
                     </div>
                   </div>
+
+
+
+
                 </div>
               </form>
             </div>
-            <div id="companies" class="tab-content hidden">
-              <div class="table-responsive table-space mt-4">
-                <table class="table">
-                  <thead>
-                    <tr class="table-header">
-                      <th scope="col" class="th-checkbox">
-                        <input type="checkbox" class="chk-box" />
-                      </th>
-                      <th scope="col" class="th-no">
-                        <a href="#" class="userHeading">
-                          ID <img src="./img/list/sort.svg" alt="sort" />
-                        </a>
-                      </th>
-                      <th scope="col" class="userHeading-size">
-                        <a href="#" class="userHeading">
-                          COMPANY <img src="./img/list/sort.svg" alt="sort" />
-                        </a>
-                      </th>
-                      <th scope="col">
-                        <a href="#" class="userHeading">
-                          ASSOCIATION <img src="./img/list/sort.svg" alt="sort" />
-                        </a>
-                      </th>
-                      <th scope="col">
-                        <a href="#" class="userHeading">
-                          EMAIL <img src="./img/list/sort.svg" alt="sort" />
-                        </a>
-                      </th>
-                      <th scope="col">
-                        <a href="#" class="userHeading">
-                          STATUS <img src="./img/list/sort.svg" alt="sort" />
-                        </a>
-                      </th>
-                      <th scope="col">
-                        <a href="#" class="userHeading">
-                          JOINED <img src="./img/list/sort.svg" alt="sort" />
-                        </a>
-                      </th>
-                      <th scope="col">
-                        <div class="userHeading">ACTION</div>
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="first-row">
-                      <th scope="row justify-content-center align-items-center">
-                        <input type="checkbox" class="chk-box" />
-                      </th>
-                      <td>
-                        <div class="userNo">01</div>
-                      </td>
-                      <td>
-                        <div class="d-flex flex-row align-items-center userName">
-                          <img src="./img/list/list-users.png" alt="" />Jordan
-                          Stevenson
-                        </div>
-                      </td>
-                      <td>
-                        <div class="userNo">Owner</div>
-                      </td>
-                      <td>
-                        <a href="mailto:Jaylon_Bartell3@gmail.com" class="userNo">Jaylon_Bartell3@gmail.com</a>
-                      </td>
-                      <td>
-                        <div class="userActive">Active</div>
-                      </td>
-                      <td>
-                        <div class="userNo">7/29/2024</div>
-                      </td>
-                      <td class="d-flex flex-row">
-                        <button class="btn btn-crud">
-                          <img src="./img/list/view.svg" alt="" />
-                        </button>
-                        <button class="btn btn-crud">
-                          <img src="./img/list/edit.svg" alt="" />
-                        </button>
-                        <button class="btn btn-crud">
-                          <img src="./img/list/delete.svg" alt="" />
-                        </button>
-                      </td>
-                    </tr>
-                    <tr class="second-row">
-                      <th scope="row justify-content-center align-items-center">
-                        <input type="checkbox" class="chk-box" />
-                      </th>
-                      <td>
-                        <div class="userNo">01</div>
-                      </td>
-                      <td>
-                        <div class="d-flex flex-row align-items-center userName">
-                          <img src="./img/list/list-users.png" alt="" />Jordan
-                          Stevenson
-                        </div>
-                      </td>
-                      <td>
-                        <div class="userNo">Manager</div>
-                      </td>
-                      <td>
-                        <a href="mailto:Jaylon_Bartell3@gmail.com" class="userNo">Jaylon_Bartell3@gmail.com</a>
-                      </td>
 
-                      <td>
-                        <div class="userActive">Active</div>
-                      </td>
-                      <td>
-                        <div class="userNo">7/29/2024</div>
-                      </td>
-                      <td class="d-flex flex-row">
-                        <button class="btn btn-crud">
-                          <img src="./img/list/view.svg" alt="" />
-                        </button>
-                        <button class="btn btn-crud">
-                          <img src="./img/list/edit.svg" alt="" />
-                        </button>
-                        <button class="btn btn-crud">
-                          <img src="./img/list/delete.svg" alt="" />
-                        </button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- pagination -->
-              <div class="pagination d-flex flex-column flex-md-row justify-content-end align-items-center">
-                <div class="d-flex align-items-center gap-2">
-                  <h4>Rows per page:</h4>
-                  <select name="" id="" class="pagiSelect">
-                    <option value="10">10</option>
-                    <option value="20">20</option>
-                    <option value="30">30</option>
-                  </select>
+
+            <div id="locations" class="tab-content hidden">
+              <form class="user-form ps-0 pb-0" action="">
+                <div class="row" id="user-form-row">
+                  <div class="col-md-5">
+                    <div>
+                      <label for="name">Location Name:</label>
+                      <input type="text" name="name" id="name" placeholder="John Doe" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div>
+                      <label for="number2">Company Phone 2:</label>
+                      <input type="number" name="number2" id="number2" placeholder="2222222222" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-md-2 align-self-end">
+                    <div class="addMore">
+                      <button class="btn p-0">+ Phone Number</button>
+                    </div>
+                  </div>
+                  <div class="col-md-10">
+                    <div>
+                      <label for="Website">Address:</label>
+                      <input type="text" name="Website" id="Website"
+                        placeholder="5124 Broadway, New Hyde Park, NY 12334" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-md-2 align-self-end">
+                    <div class="addMore">
+                      <button class="btn p-0">+ Phone Number</button>
+                    </div>
+                  </div>
+
                 </div>
-                <div class="d-flex align-items-center page-no">
-                  <span>1-5</span>
-                  <span>of</span>
-                  <span>13</span>
-                </div>
-                <div>
-                  <a href="#" class="btn btn-pagiBtn"><img src="./img/list/arrow-left.svg" alt="" /></a>
-                  <a href="#" class="btn btn-pagiBtn"><img src="./img/list/arrow-right.svg" alt="" /></a>
-                </div>
-              </div>
+              </form>
             </div>
+
+
             <div id="posts" class="tab-content hidden">
               <div class="table-responsive table-space mt-4">
                 <table class="table">
@@ -672,7 +752,185 @@
                 </div>
               </div>
             </div>
-            <div id="wallet" class="tab-content hidden">
+
+
+            <div id="showcase" class="tab-content hidden">
+              <div class="table-responsive table-space mt-4">
+                <table class="table">
+                  <thead>
+                    <tr class="table-header">
+                      <th scope="col" class="th-checkbox">
+                        <input type="checkbox" class="chk-box" />
+                      </th>
+                      <th scope="col" class="th-no">
+                        <a href="#" class="userHeading">
+                          No <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+                      <th scope="col" class="userHeading-size">
+                        <a href="#" class="userHeading">
+                          Image <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+                      <th scope="col">
+                        <a href="#" class="userHeading">
+                          Item <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+                      <th scope="col">
+                        <a href="#" class="userHeading">
+                          Category <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+                      <th scope="col">
+                        <a href="#" class="userHeading">
+                          PrIce <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+                      <th scope="col">
+                        <a href="#" class="userHeading">
+                          Description <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+
+                      <th scope="col">
+                        <a href="#" class="userHeading">
+                          Status <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+                      <th scope="col">
+                        <a href="#" class="userHeading">
+                          Created at <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+
+                      <th scope="col">
+                        <div class="userHeading">ACTION</div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="first-row">
+                      <th scope="row justify-content-center align-items-center">
+                        <input type="checkbox" class="chk-box" />
+                      </th>
+                      <td>
+                        <div class="userNo">01</div>
+                      </td>
+                      <td>
+                        <div class="listImageBox">
+                          <img src="./img/list-image.png" alt="img" class="img-fluid listImage" />
+                        </div>
+                      </td>
+                      <td>
+                        <div class="userNo">Item 1</div>
+                      </td>
+                      <td>
+                        <a href="" class="userNo text-green2">Category 1</a>
+                      </td>
+                      <td>
+                        <div class="">$100.00</div>
+                      </td>
+
+                      <td>
+                        <div class="w-162">A network engineer is a technology professional.</div>
+                      </td>
+
+                      <td>
+                        <div class="userActive">Active</div>
+                      </td>
+                      <td>
+                        <div class="userNo">7/29/2024</div>
+                      </td>
+                      <td>
+                        <div class="d-flex flex-row">
+                          <button class="btn btn-crud">
+                            <img src="./img/list/view.svg" alt="" />
+                          </button>
+                          <button class="btn btn-crud">
+                            <img src="./img/list/edit.svg" alt="" />
+                          </button>
+                          <button class="btn btn-crud">
+                            <img src="./img/list/delete.svg" alt="" />
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="second-row">
+                      <th scope="row justify-content-center align-items-center">
+                        <input type="checkbox" class="chk-box" />
+                      </th>
+                      <td>
+                        <div class="userNo">01</div>
+                      </td>
+                      <td>
+                        <div class="d-flex gap-2 align-self-center">
+                          <div class="">
+                            <img src="./img/img.png" alt="img" class="img-fluid" />
+                          </div>
+                          <a href="" class="text-green2">See more...</a>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="userNo">Item 1</div>
+                      </td>
+                      <td>
+                        <a href="" class="userNo text-green2">Category 1</a>
+                      </td>
+                      <td>
+                        <div class="">$100.00</div>
+                      </td>
+
+                      <td>
+                        <div class="">A network <a href="" class="text-green2">See more...</a></div>
+                      </td>
+
+                      <td>
+                        <div class="userActive">Active</div>
+                      </td>
+                      <td>
+                        <div class="userNo">7/29/2024</div>
+                      </td>
+                      <td>
+                        <div class="d-flex flex-row">
+                          <button class="btn btn-crud">
+                            <img src="./img/list/view.svg" alt="" />
+                          </button>
+                          <button class="btn btn-crud">
+                            <img src="./img/list/edit.svg" alt="" />
+                          </button>
+                          <button class="btn btn-crud">
+                            <img src="./img/list/delete.svg" alt="" />
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- pagination -->
+              <div class="pagination d-flex flex-column flex-md-row justify-content-end align-items-center">
+                <div class="d-flex align-items-center gap-2">
+                  <h4>Rows per page:</h4>
+                  <select name="" id="" class="pagiSelect">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                  </select>
+                </div>
+                <div class="d-flex align-items-center page-no">
+                  <span>1-5</span>
+                  <span>of</span>
+                  <span>13</span>
+                </div>
+                <div>
+                  <a href="#" class="btn btn-pagiBtn"><img src="./img/list/arrow-left.svg" alt="" /></a>
+                  <a href="#" class="btn btn-pagiBtn"><img src="./img/list/arrow-right.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+
+            <div id="team" class="tab-content hidden">
               <div class="table-responsive table-space mt-4">
                 <table class="table">
                   <thead>
@@ -687,27 +945,27 @@
                       </th>
                       <th scope="col" class="userHeading-size">
                         <a href="#" class="userHeading">
-                          Credit Earned <img src="./img/list/sort.svg" alt="sort" />
+                          user <img src="./img/list/sort.svg" alt="sort" />
                         </a>
                       </th>
                       <th scope="col">
                         <a href="#" class="userHeading">
-                          Credit Used <img src="./img/list/sort.svg" alt="sort" />
+                          Type <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+
+                      <th scope="col">
+                        <a href="#" class="userHeading">
+                          STATUS <img src="./img/list/sort.svg" alt="sort" />
                         </a>
                       </th>
                       <th scope="col">
                         <a href="#" class="userHeading">
-                          Net Credits
-                          <img src="./img/list/sort.svg" alt="sort" />
+                          JOINED <img src="./img/list/sort.svg" alt="sort" />
                         </a>
                       </th>
                       <th scope="col">
-                        <a href="#" class="userHeading">
-                          Date <img src="./img/list/sort.svg" alt="sort" />
-                        </a>
-                      </th>
-                      <th scope="col" class="pe-3">
-                        <div class="userHeading justify-content-end">ACTION</div>
+                        <div class="userHeading">ACTION</div>
                       </th>
                     </tr>
                   </thead>
@@ -719,22 +977,23 @@
                       <td>
                         <div class="userNo">01</div>
                       </td>
-                      <td class="text-green">
-                        +$100.00
-
+                      <td>
+                        <div class="d-flex flex-row align-items-center userName">
+                          <img src="./img/list/list-users.png" alt="" />Jordan
+                          Stevenson
+                        </div>
                       </td>
                       <td>
-                        <div class="userNo">-</div>
-                      </td>
-                      <td>
-                        <div class="userNo">$200.00</div>
-                      </td>
-                      <td>
-                        7/29/2024
-
+                        <div class="userNo">Owner</div>
                       </td>
 
-                      <td class="d-flex flex-row justify-content-end">
+                      <td>
+                        <div class="userActive">Active</div>
+                      </td>
+                      <td>
+                        <div class="userNo">7/29/2024</div>
+                      </td>
+                      <td class="d-flex flex-row">
                         <button class="btn btn-crud">
                           <img src="./img/list/view.svg" alt="" />
                         </button>
@@ -754,20 +1013,23 @@
                         <div class="userNo">01</div>
                       </td>
                       <td>
-                        -
+                        <div class="d-flex flex-row align-items-center userName">
+                          <img src="./img/list/list-users.png" alt="" />Jordan
+                          Stevenson
+                        </div>
                       </td>
                       <td>
-                        <div class="userNo">-$100.00</div>
-                      </td>
-                      <td>
-                        <div class="userNo">$100.00</div>
-                      </td>
-                      <td>
-                        7/29/2024
-
+                        <div class="userNo">Manager</div>
                       </td>
 
-                      <td class="d-flex flex-row justify-content-end">
+
+                      <td>
+                        <div class="userActive">Active</div>
+                      </td>
+                      <td>
+                        <div class="userNo">7/29/2024</div>
+                      </td>
+                      <td class="d-flex flex-row">
                         <button class="btn btn-crud">
                           <img src="./img/list/view.svg" alt="" />
                         </button>
@@ -779,11 +1041,168 @@
                         </button>
                       </td>
                     </tr>
-
                   </tbody>
                 </table>
               </div>
+              <!-- pagination -->
+              <div class="pagination d-flex flex-column flex-md-row justify-content-end align-items-center">
+                <div class="d-flex align-items-center gap-2">
+                  <h4>Rows per page:</h4>
+                  <select name="" id="" class="pagiSelect">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                  </select>
+                </div>
+                <div class="d-flex align-items-center page-no">
+                  <span>1-5</span>
+                  <span>of</span>
+                  <span>13</span>
+                </div>
+                <div>
+                  <a href="#" class="btn btn-pagiBtn"><img src="./img/list/arrow-left.svg" alt="" /></a>
+                  <a href="#" class="btn btn-pagiBtn"><img src="./img/list/arrow-right.svg" alt="" /></a>
+                </div>
+              </div>
             </div>
+
+            <div id="recommends" class="tab-content hidden">
+              <div class="table-responsive table-space mt-4">
+                <table class="table">
+                  <thead>
+                    <tr class="table-header">
+                      <th scope="col" class="th-checkbox">
+                        <input type="checkbox" class="chk-box" />
+                      </th>
+                      <th scope="col" class="th-no">
+                        <a href="#" class="userHeading">
+                          ID <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+                      <th scope="col" class="userHeading-size">
+                        <a href="#" class="userHeading">
+                          user <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+                      <th scope="col">
+                        <a href="#" class="userHeading">
+                          Type <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+
+                      <th scope="col">
+                        <a href="#" class="userHeading">
+                          STATUS <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+                      <th scope="col">
+                        <a href="#" class="userHeading">
+                          JOINED <img src="./img/list/sort.svg" alt="sort" />
+                        </a>
+                      </th>
+                      <th scope="col">
+                        <div class="userHeading">ACTION</div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="first-row">
+                      <th scope="row justify-content-center align-items-center">
+                        <input type="checkbox" class="chk-box" />
+                      </th>
+                      <td>
+                        <div class="userNo">01</div>
+                      </td>
+                      <td>
+                        <div class="d-flex flex-row align-items-center userName">
+                          <img src="./img/list/list-users.png" alt="" />Jordan
+                          Stevenson
+                        </div>
+                      </td>
+                      <td>
+                        <div class="userNo">Given</div>
+                      </td>
+
+                      <td>
+                        <div class="userActive">Active</div>
+                      </td>
+                      <td>
+                        <div class="userNo">7/29/2024</div>
+                      </td>
+                      <td class="d-flex flex-row">
+                        <button class="btn btn-crud">
+                          <img src="./img/list/view.svg" alt="" />
+                        </button>
+                        <button class="btn btn-crud">
+                          <img src="./img/list/edit.svg" alt="" />
+                        </button>
+                        <button class="btn btn-crud">
+                          <img src="./img/list/delete.svg" alt="" />
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="second-row">
+                      <th scope="row justify-content-center align-items-center">
+                        <input type="checkbox" class="chk-box" />
+                      </th>
+                      <td>
+                        <div class="userNo">01</div>
+                      </td>
+                      <td>
+                        <div class="d-flex flex-row align-items-center userName">
+                          <img src="./img/list/list-users.png" alt="" />Jordan
+                          Stevenson
+                        </div>
+                      </td>
+                      <td>
+                        <div class="userNo">Received</div>
+                      </td>
+
+
+                      <td>
+                        <div class="userActive">Active</div>
+                      </td>
+                      <td>
+                        <div class="userNo">7/29/2024</div>
+                      </td>
+                      <td class="d-flex flex-row">
+                        <button class="btn btn-crud">
+                          <img src="./img/list/view.svg" alt="" />
+                        </button>
+                        <button class="btn btn-crud">
+                          <img src="./img/list/edit.svg" alt="" />
+                        </button>
+                        <button class="btn btn-crud">
+                          <img src="./img/list/delete.svg" alt="" />
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- pagination -->
+              <div class="pagination d-flex flex-column flex-md-row justify-content-end align-items-center">
+                <div class="d-flex align-items-center gap-2">
+                  <h4>Rows per page:</h4>
+                  <select name="" id="" class="pagiSelect">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                  </select>
+                </div>
+                <div class="d-flex align-items-center page-no">
+                  <span>1-5</span>
+                  <span>of</span>
+                  <span>13</span>
+                </div>
+                <div>
+                  <a href="#" class="btn btn-pagiBtn"><img src="./img/list/arrow-left.svg" alt="" /></a>
+                  <a href="#" class="btn btn-pagiBtn"><img src="./img/list/arrow-right.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </main>
