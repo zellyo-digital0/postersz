@@ -450,12 +450,18 @@ ul {
   align-items: flex-start;
 }
 
+.w-24 {
+  width: 24%;
+}
 .user-left {
   width: 24%;
   box-shadow: 0 0 22px 6px rgb(0 0 0 / 4%);
   border-radius: 10px;
   padding: 50px 30px;
   background: #fff;
+}
+.translate-none {
+  transform: none !important;
 }
 
 .avatar-img {
@@ -1495,6 +1501,48 @@ input[type='checkbox']:focus {
 .w-162 {
   width: 162px;
 }
+.categorized-btn {
+  width: 135px;
+  max-width: 100%;
+  background-color: #56ca00;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 5px;
+  text-align: center;
+  font-size: 13px;
+}
+.uncategorized-btn {
+  background: #ff4c51;
+}
+.bg-danger {
+  background-image: none;
+}
+.totalPostNumber {
+}
+.totalPostNumber h4 {
+  font-weight: 500;
+  font-weight: 18px;
+  line-height: 28px;
+  color: #2e263d;
+}
+.totalPostNumber p {
+  font-size: 12px;
+  line-height: 22px;
+  color: rgba(46, 38, 61, 0.7);
+}
+.totalPostNumber p a {
+  color: #007aff;
+}
+.postDetails input {
+  height: 42px !important;
+}
+.activeInput::placeholder,
+.activeInput {
+  color: #34c759 !important;
+}
+.img-upload.h-100 {
+  min-height: 200px;
+}
 /* 
 
 
@@ -1694,6 +1742,9 @@ input[type='checkbox']:focus {
   }
 } /* 1200px */
 @media (max-width: 48rem) {
+  .btn-cst {
+    margin: 12px 0 0 0;
+  }
   /* 768px */
   .list-users {
     padding: 16px;
@@ -1752,9 +1803,7 @@ input[type='checkbox']:focus {
   .addUser {
     width: 100%;
   }
-  .btn-cst {
-    margin: 12px 0 0 0;
-  }
+
   .userList {
     padding-top: 20px;
     padding-left: 20px;
@@ -1811,7 +1860,8 @@ input[type='checkbox']:focus {
     flex-direction: column;
   }
 
-  .user-left {
+  .user-left,
+  .w-24 {
     width: 100%;
     box-shadow: 0 0 14px 6px rgb(0 0 0 / 4%);
   }
