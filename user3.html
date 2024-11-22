@@ -263,7 +263,7 @@
                   <span class="text">Total Credits in Wallet</span>
                   <span class="price">$200.00</span>
                 </p>
-                <button>
+                <button data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <span>Add/Remove Credits ($)</span>
                 </button>
               </div>
@@ -792,6 +792,69 @@
       </main>
     </div>
     <!-- content area end -->
+
+    <!-- Modal -->
+    <div class="modal fade customModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="exampleModalLabel">Add/Remove Credits ($)</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="user-form p-0 d-flex flex-column gap-3" action="">
+              <div class="row">
+                <div class="col-12 mb-3">
+                  <div class="d-flex flex-wrap gap-4">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+                        checked>
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Add Credits ($)
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        Remove Credits ($)
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div>
+                    <input type="text" name="credits" id="credits" placeholder="Enter Credits($)"
+                      class="form-control  m-0">
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div>
+                    <input type="date" name="Date" id="Date" placeholder="Date" class="form-control  m-0">
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="TotalCreditsContent">
+                <p>Total Credits Will be</p>
+                <h6>$200.00 + $0.00 <span>= $200.00</span></h6>
+              </div>
+
+              <div class="mt-2 gap-3 d-flex flex-row">
+                <button type="button" class="btn btnSave">Save</button>
+                <button type="button" class="btn btnClose" data-bs-dismiss="modal">Close</button>
+              </div>
+            </form>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
 
 
   </div>
