@@ -29,6 +29,7 @@
   <!-- I use this because of you use HTPP this not suppport on github or other platforms.  -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
   <link rel="stylesheet" href="./css/custom.css" />
 
   <title>Postersz App</title>
@@ -159,7 +160,7 @@
               </svg>
 
             </li>
-            <li>User</li>
+            <li>Ads</li>
           </ul>
         </div>
         <div class="d-lg-none d-block">
@@ -209,112 +210,22 @@
           <div class="">
             <div class="row">
               <!-- top -->
-              <div class="col-12">
-                <div class="d-flex flex-md-row flex-column justify-content-md-between align-items-center">
+              <div class="col-12 pb-4">
+                <div
+                  class="d-flex flex-md-row flex-column justify-content-xl-between justify-content-center flex-wrap align-items-center gap-md-4">
                   <div class="search-form">
                     <button class="btn p-0 outline-0" type="submit"><img src="./img/list/search.svg"
                         alt="search icon" /></button>
-                    <input type="search" class="form-control form-input border-0" placeholder="Search Users" />
+                    <input type="search" class="form-control form-input border-0" placeholder="Search Ads" />
                   </div>
-                  <div class="addUser">
-                    <a href="#" class="btn btn-cst" data-bs-toggle="modal" data-bs-target="#exampleModal">Add New
-                      User</a>
+                  <div class="addUser d-flex gap-3">
+
+                    <a href="#" class="btn btn-cst px-3">Increase Views</a>
                   </div>
                 </div>
               </div>
               <!-- middle -->
-              <div class="col-12">
-                <div class="filter">
-                  <div class="row">
-                    <div class="col-12">
-                      <h2>Filters</h2>
-                    </div>
-                    <div class="col-12">
-                      <div class="row from-row">
-                        <div class="col-md-3 col-12">
-                          <div class="dropdown position-relative">
-                            <button
-                              class="btn dropdown-toggle custom-dropdown-btn d-flex justify-content-between align-items-center w-100"
-                              type="button" id="companyDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                              <span>Company Name</span>
-                              <img src="./img/list/chevron-down.svg" alt="Dropdown Icon" class="custom-dropdown-icon" />
-                            </button>
 
-                            <ul class="dropdown-menu w-100" aria-labelledby="companyDropdown">
-                              <li>
-                                <a class="dropdown-item" href="#" data-value="companyOne"><img
-                                    src="./img/list/list-users.png" alt="" />Sharp Security System</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#" data-value="companyTwo"><img
-                                    src="./img/list/list-users.png" alt="" />Postersz</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#" data-value="companyThree"><img
-                                    src="./img/list/list-users.png" alt="" />Sharp Security System</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-
-                        <div class="col-md-3 col-12">
-                          <div class="dropdown position-relative">
-                            <button
-                              class="btn dropdown-toggle custom-dropdown-btn d-flex justify-content-between align-items-center w-100"
-                              type="button" id="locationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                              <span>Location</span>
-                              <img src="./img/list/chevron-down.svg" alt="Dropdown Icon" class="custom-dropdown-icon" />
-                            </button>
-
-                            <ul class="dropdown-menu w-100 mx-w-25" aria-labelledby="locationDropdown">
-                              <li>
-                                <a class="dropdown-item" href="#" data-value="locationOne"><img
-                                    src="./img/list/location.svg" alt="" />
-                                  5124 Broadway, New Hyde Park, NY 12334</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#" data-value="locationTwo"><img
-                                    src="./img/list/location.svg" alt="" />
-                                  5124 Broadway, New Hyde Park, NY 12334</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#" data-value="locationThree"><img
-                                    src="./img/list/location.svg" alt="" />
-                                  5124 Broadway, New Hyde Park, NY 12334</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-
-                        <div class="col-md-3 col-12">
-                          <div class="dropdown position-relative">
-                            <button
-                              class="btn dropdown-toggle custom-dropdown-btn d-flex justify-content-between align-items-center w-100"
-                              type="button" id="statusDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                              <span>Status</span>
-                              <img src="./img/list/chevron-down.svg" alt="Dropdown Icon" class="custom-dropdown-icon" />
-                            </button>
-
-                            <ul class="dropdown-menu w-100" aria-labelledby="statusDropdown">
-                              <li>
-                                <a class="dropdown-item" href="#" data-value="active">Active</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#" data-value="inactive">Inactive</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-
-                        <div class="col-md-3 col-12 d-flex justify-content-start">
-                          <a href="#" class="btn btn-txt">Apply</a>
-                          <a href="#" class="btn btn-txt">Clear</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <!-- bottom -->
               <div class="col-12">
                 <div class="list-users">
@@ -328,37 +239,51 @@
                           </th>
                           <th scope="col" class="th-no">
                             <a href="#" class="userHeading">
-                              NO <img src="./img/list/sort.svg" alt="sort" />
+                              ID <img src="./img/list/sort.svg" alt="sort" />
                             </a>
                           </th>
                           <th scope="col" class="userHeading-size">
                             <a href="#" class="userHeading">
-                              USER <img src="./img/list/sort.svg" alt="sort" />
+                              Company <img src="./img/list/sort.svg" alt="sort" />
                             </a>
                           </th>
                           <th scope="col">
                             <a href="#" class="userHeading">
-                              HANDLE <img src="./img/list/sort.svg" alt="sort" />
+                              ADMIN <img src="./img/list/sort.svg" alt="sort" />
                             </a>
                           </th>
                           <th scope="col">
                             <a href="#" class="userHeading">
-                              EMAIL <img src="./img/list/sort.svg" alt="sort" />
+                              Title <img src="./img/list/sort.svg" alt="sort" />
                             </a>
                           </th>
                           <th scope="col">
                             <a href="#" class="userHeading">
-                              PHONE <img src="./img/list/sort.svg" alt="sort" />
+                              Views <img src="./img/list/sort.svg" alt="sort" />
                             </a>
                           </th>
+
                           <th scope="col">
                             <a href="#" class="userHeading">
-                              STATUS <img src="./img/list/sort.svg" alt="sort" />
+                              Status <img src="./img/list/sort.svg" alt="sort" />
                             </a>
                           </th>
+
                           <th scope="col">
                             <a href="#" class="userHeading">
-                              JOINED <img src="./img/list/sort.svg" alt="sort" />
+                              Created at <img src="./img/list/sort.svg" alt="sort" />
+                            </a>
+                          </th>
+
+                          <th scope="col">
+                            <a href="#" class="userHeading">
+                              EXPIRES <img src="./img/list/sort.svg" alt="sort" />
+                            </a>
+                          </th>
+
+                          <th scope="col">
+                            <a href="#" class="userHeading">
+                              Payment <img src="./img/list/sort.svg" alt="sort" />
                             </a>
                           </th>
                           <th scope="col">
@@ -375,26 +300,34 @@
                             <div class="userNo">01</div>
                           </td>
                           <td>
-                            <div class="d-flex flex-row align-items-center userName">
-                              <img src="./img/list/list-users.png" alt="" />Jordan
-                              Stevenson
+                            ABC Company LTD.
+                          </td>
+                          <td>
+                            <a href="">Adam Jhons</a>
+                          </td>
+                          <td>
+                            AD Title is Here
+                          </td>
+                          <td>
+                            <div class="userVw d-flex justify-content-center align-items-center">
+                              09
                             </div>
                           </td>
                           <td>
-                            <div class="userHandle">@jordenstevenson</div>
+                            <div class="userActive">Active</div>
                           </td>
                           <td>
-                            <a href="mailto:Jaylon_Bartell3@gmail.com" class="userNo">Jaylon_Bartell3@gmail.com</a>
+                            7/29/2024 12:24 PM
                           </td>
-                          <td class="td-num">
-                            <a href="tel:+1 718.212.2222" class="userNum">+1 718.212.2222</a>
-                          </td>
+
                           <td>
-                            <div class="userInactive">Inactive</div>
+                            <div class="userNo">8/11/2024 12:00 PM</div>
                           </td>
+
                           <td>
-                            <div class="userNo">7/29/2024</div>
+                            <div class="textSucceeded">Succeeded</div>
                           </td>
+
                           <td class="d-flex flex-row">
                             <button class="btn btn-crud">
                               <img src="./img/list/view.svg" alt="" />
@@ -407,6 +340,7 @@
                             </button>
                           </td>
                         </tr>
+
                         <tr class="second-row">
                           <th scope="row justify-content-center align-items-center">
                             <input type="checkbox" class="chk-box" />
@@ -415,26 +349,34 @@
                             <div class="userNo">01</div>
                           </td>
                           <td>
-                            <div class="d-flex flex-row align-items-center userName">
-                              <img src="./img/list/list-users.png" alt="" />Jordan
-                              Stevenson
+                            ABC Company LTD.
+                          </td>
+                          <td>
+                            <a href="">Adam Jhons</a>
+                          </td>
+                          <td>
+                            AD Title is Here
+                          </td>
+                          <td>
+                            <div class="userVw d-flex justify-content-center align-items-center">
+                              09
                             </div>
                           </td>
                           <td>
-                            <div class="userHandle">@jordenstevenson</div>
+                            <div class="userInactive userExpired">Expired</div>
                           </td>
                           <td>
-                            <a href="mailto:Jaylon_Bartell3@gmail.com" class="userNo">Jaylon_Bartell3@gmail.com</a>
+                            7/29/2024 12:24 PM
                           </td>
-                          <td class="td-num">
-                            <a href="tel:+1 718.212.2222" class="userNum">+1 718.212.2222</a>
-                          </td>
+
                           <td>
-                            <div class="userActive">Active</div>
+                            <div class="userNo">8/11/2024 12:00 PM</div>
                           </td>
+
                           <td>
-                            <div class="userNo">7/29/2024</div>
+                            <div class="text-Declined">CC Declined</div>
                           </td>
+
                           <td class="d-flex flex-row">
                             <button class="btn btn-crud">
                               <img src="./img/list/view.svg" alt="" />
@@ -455,26 +397,34 @@
                             <div class="userNo">01</div>
                           </td>
                           <td>
-                            <div class="d-flex flex-row align-items-center userName">
-                              <img src="./img/list/list-users.png" alt="" />Jordan
-                              Stevenson
+                            ABC Company LTD.
+                          </td>
+                          <td>
+                            <a href="">Adam Jhons</a>
+                          </td>
+                          <td>
+                            AD Title is Here
+                          </td>
+                          <td>
+                            <div class="userVw d-flex justify-content-center align-items-center">
+                              09
                             </div>
                           </td>
                           <td>
-                            <div class="userHandle">@jordenstevenson</div>
+                            <div class="userActive">Active</div>
                           </td>
                           <td>
-                            <a href="mailto:Jaylon_Bartell3@gmail.com" class="userNo">Jaylon_Bartell3@gmail.com</a>
+                            7/29/2024 12:24 PM
                           </td>
-                          <td class="td-num">
-                            <a href="tel:+1 718.212.2222" class="userNum">+1 718.212.2222</a>
-                          </td>
+
                           <td>
-                            <div class="userInactive">Inactive</div>
+                            <div class="userNo">8/11/2024 12:00 PM</div>
                           </td>
+
                           <td>
-                            <div class="userNo">7/29/2024</div>
+                            <div class="textSucceeded">Succeeded</div>
                           </td>
+
                           <td class="d-flex flex-row">
                             <button class="btn btn-crud">
                               <img src="./img/list/view.svg" alt="" />
@@ -487,6 +437,7 @@
                             </button>
                           </td>
                         </tr>
+
                         <tr class="second-row">
                           <th scope="row justify-content-center align-items-center">
                             <input type="checkbox" class="chk-box" />
@@ -495,26 +446,34 @@
                             <div class="userNo">01</div>
                           </td>
                           <td>
-                            <div class="d-flex flex-row align-items-center userName">
-                              <img src="./img/list/list-users.png" alt="" />Jordan
-                              Stevenson
+                            ABC Company LTD.
+                          </td>
+                          <td>
+                            <a href="">Adam Jhons</a>
+                          </td>
+                          <td>
+                            AD Title is Here
+                          </td>
+                          <td>
+                            <div class="userVw d-flex justify-content-center align-items-center">
+                              09
                             </div>
                           </td>
                           <td>
-                            <div class="userHandle">@jordenstevenson</div>
+                            <div class="userInactive userExpired">Expired</div>
                           </td>
                           <td>
-                            <a href="mailto:Jaylon_Bartell3@gmail.com" class="userNo">Jaylon_Bartell3@gmail.com</a>
+                            7/29/2024 12:24 PM
                           </td>
-                          <td class="td-num">
-                            <a href="tel:+1 718.212.2222" class="userNum">+1 718.212.2222</a>
-                          </td>
+
                           <td>
-                            <div class="userActive">Active</div>
+                            <div class="userNo">8/11/2024 12:00 PM</div>
                           </td>
+
                           <td>
-                            <div class="userNo">7/29/2024</div>
+                            <div class="text-Declined">CC Declined</div>
                           </td>
+
                           <td class="d-flex flex-row">
                             <button class="btn btn-crud">
                               <img src="./img/list/view.svg" alt="" />
@@ -535,26 +494,34 @@
                             <div class="userNo">01</div>
                           </td>
                           <td>
-                            <div class="d-flex flex-row align-items-center userName">
-                              <img src="./img/list/list-users.png" alt="" />Jordan
-                              Stevenson
+                            ABC Company LTD.
+                          </td>
+                          <td>
+                            <a href="">Adam Jhons</a>
+                          </td>
+                          <td>
+                            AD Title is Here
+                          </td>
+                          <td>
+                            <div class="userVw d-flex justify-content-center align-items-center">
+                              09
                             </div>
                           </td>
                           <td>
-                            <div class="userHandle">@jordenstevenson</div>
+                            <div class="userActive">Active</div>
                           </td>
                           <td>
-                            <a href="mailto:Jaylon_Bartell3@gmail.com" class="userNo">Jaylon_Bartell3@gmail.com</a>
+                            7/29/2024 12:24 PM
                           </td>
-                          <td class="td-num">
-                            <a href="tel:+1 718.212.2222" class="userNum">+1 718.212.2222</a>
-                          </td>
+
                           <td>
-                            <div class="userInactive">Inactive</div>
+                            <div class="userNo">8/11/2024 12:00 PM</div>
                           </td>
+
                           <td>
-                            <div class="userNo">7/29/2024</div>
+                            <div class="textSucceeded">Succeeded</div>
                           </td>
+
                           <td class="d-flex flex-row">
                             <button class="btn btn-crud">
                               <img src="./img/list/view.svg" alt="" />
@@ -567,6 +534,7 @@
                             </button>
                           </td>
                         </tr>
+
                         <tr class="second-row">
                           <th scope="row justify-content-center align-items-center">
                             <input type="checkbox" class="chk-box" />
@@ -575,26 +543,34 @@
                             <div class="userNo">01</div>
                           </td>
                           <td>
-                            <div class="d-flex flex-row align-items-center userName">
-                              <img src="./img/list/list-users.png" alt="" />Jordan
-                              Stevenson
+                            ABC Company LTD.
+                          </td>
+                          <td>
+                            <a href="">Adam Jhons</a>
+                          </td>
+                          <td>
+                            AD Title is Here
+                          </td>
+                          <td>
+                            <div class="userVw d-flex justify-content-center align-items-center">
+                              09
                             </div>
                           </td>
                           <td>
-                            <div class="userHandle">@jordenstevenson</div>
+                            <div class="userInactive userExpired">Expired</div>
                           </td>
                           <td>
-                            <a href="mailto:Jaylon_Bartell3@gmail.com" class="userNo">Jaylon_Bartell3@gmail.com</a>
+                            7/29/2024 12:24 PM
                           </td>
-                          <td class="td-num">
-                            <a href="tel:+1 718.212.2222" class="userNum">+1 718.212.2222</a>
-                          </td>
+
                           <td>
-                            <div class="userActive">Active</div>
+                            <div class="userNo">8/11/2024 12:00 PM</div>
                           </td>
+
                           <td>
-                            <div class="userNo">7/29/2024</div>
+                            <div class="text-Declined">CC Declined</div>
                           </td>
+
                           <td class="d-flex flex-row">
                             <button class="btn btn-crud">
                               <img src="./img/list/view.svg" alt="" />
@@ -615,26 +591,34 @@
                             <div class="userNo">01</div>
                           </td>
                           <td>
-                            <div class="d-flex flex-row align-items-center userName">
-                              <img src="./img/list/list-users.png" alt="" />Jordan
-                              Stevenson
+                            ABC Company LTD.
+                          </td>
+                          <td>
+                            <a href="">Adam Jhons</a>
+                          </td>
+                          <td>
+                            AD Title is Here
+                          </td>
+                          <td>
+                            <div class="userVw d-flex justify-content-center align-items-center">
+                              09
                             </div>
                           </td>
                           <td>
-                            <div class="userHandle">@jordenstevenson</div>
+                            <div class="userActive">Active</div>
                           </td>
                           <td>
-                            <a href="mailto:Jaylon_Bartell3@gmail.com" class="userNo">Jaylon_Bartell3@gmail.com</a>
+                            7/29/2024 12:24 PM
                           </td>
-                          <td class="td-num">
-                            <a href="tel:+1 718.212.2222" class="userNum">+1 718.212.2222</a>
-                          </td>
+
                           <td>
-                            <div class="userInactive">Inactive</div>
+                            <div class="userNo">8/11/2024 12:00 PM</div>
                           </td>
+
                           <td>
-                            <div class="userNo">7/29/2024</div>
+                            <div class="textSucceeded">Succeeded</div>
                           </td>
+
                           <td class="d-flex flex-row">
                             <button class="btn btn-crud">
                               <img src="./img/list/view.svg" alt="" />
@@ -647,6 +631,7 @@
                             </button>
                           </td>
                         </tr>
+
                         <tr class="second-row">
                           <th scope="row justify-content-center align-items-center">
                             <input type="checkbox" class="chk-box" />
@@ -655,26 +640,34 @@
                             <div class="userNo">01</div>
                           </td>
                           <td>
-                            <div class="d-flex flex-row align-items-center userName">
-                              <img src="./img/list/list-users.png" alt="" />Jordan
-                              Stevenson
+                            ABC Company LTD.
+                          </td>
+                          <td>
+                            <a href="">Adam Jhons</a>
+                          </td>
+                          <td>
+                            AD Title is Here
+                          </td>
+                          <td>
+                            <div class="userVw d-flex justify-content-center align-items-center">
+                              09
                             </div>
                           </td>
                           <td>
-                            <div class="userHandle">@jordenstevenson</div>
+                            <div class="userInactive userExpired">Expired</div>
                           </td>
                           <td>
-                            <a href="mailto:Jaylon_Bartell3@gmail.com" class="userNo">Jaylon_Bartell3@gmail.com</a>
+                            7/29/2024 12:24 PM
                           </td>
-                          <td class="td-num">
-                            <a href="tel:+1 718.212.2222" class="userNum">+1 718.212.2222</a>
-                          </td>
+
                           <td>
-                            <div class="userActive">Active</div>
+                            <div class="userNo">8/11/2024 12:00 PM</div>
                           </td>
+
                           <td>
-                            <div class="userNo">7/29/2024</div>
+                            <div class="text-Declined">CC Declined</div>
                           </td>
+
                           <td class="d-flex flex-row">
                             <button class="btn btn-crud">
                               <img src="./img/list/view.svg" alt="" />
@@ -695,26 +688,34 @@
                             <div class="userNo">01</div>
                           </td>
                           <td>
-                            <div class="d-flex flex-row align-items-center userName">
-                              <img src="./img/list/list-users.png" alt="" />Jordan
-                              Stevenson
+                            ABC Company LTD.
+                          </td>
+                          <td>
+                            <a href="">Adam Jhons</a>
+                          </td>
+                          <td>
+                            AD Title is Here
+                          </td>
+                          <td>
+                            <div class="userVw d-flex justify-content-center align-items-center">
+                              09
                             </div>
                           </td>
                           <td>
-                            <div class="userHandle">@jordenstevenson</div>
+                            <div class="userActive">Active</div>
                           </td>
                           <td>
-                            <a href="mailto:Jaylon_Bartell3@gmail.com" class="userNo">Jaylon_Bartell3@gmail.com</a>
+                            7/29/2024 12:24 PM
                           </td>
-                          <td class="td-num">
-                            <a href="tel:+1 718.212.2222" class="userNum">+1 718.212.2222</a>
-                          </td>
+
                           <td>
-                            <div class="userInactive">Inactive</div>
+                            <div class="userNo">8/11/2024 12:00 PM</div>
                           </td>
+
                           <td>
-                            <div class="userNo">7/29/2024</div>
+                            <div class="textSucceeded">Succeeded</div>
                           </td>
+
                           <td class="d-flex flex-row">
                             <button class="btn btn-crud">
                               <img src="./img/list/view.svg" alt="" />
@@ -727,6 +728,7 @@
                             </button>
                           </td>
                         </tr>
+
                         <tr class="second-row">
                           <th scope="row justify-content-center align-items-center">
                             <input type="checkbox" class="chk-box" />
@@ -735,26 +737,34 @@
                             <div class="userNo">01</div>
                           </td>
                           <td>
-                            <div class="d-flex flex-row align-items-center userName">
-                              <img src="./img/list/list-users.png" alt="" />Jordan
-                              Stevenson
+                            ABC Company LTD.
+                          </td>
+                          <td>
+                            <a href="">Adam Jhons</a>
+                          </td>
+                          <td>
+                            AD Title is Here
+                          </td>
+                          <td>
+                            <div class="userVw d-flex justify-content-center align-items-center">
+                              09
                             </div>
                           </td>
                           <td>
-                            <div class="userHandle">@jordenstevenson</div>
+                            <div class="userInactive userExpired">Expired</div>
                           </td>
                           <td>
-                            <a href="mailto:Jaylon_Bartell3@gmail.com" class="userNo">Jaylon_Bartell3@gmail.com</a>
+                            7/29/2024 12:24 PM
                           </td>
-                          <td class="td-num">
-                            <a href="tel:+1 718.212.2222" class="userNum">+1 718.212.2222</a>
-                          </td>
+
                           <td>
-                            <div class="userActive">Active</div>
+                            <div class="userNo">8/11/2024 12:00 PM</div>
                           </td>
+
                           <td>
-                            <div class="userNo">7/29/2024</div>
+                            <div class="text-Declined">CC Declined</div>
                           </td>
+
                           <td class="d-flex flex-row">
                             <button class="btn btn-crud">
                               <img src="./img/list/view.svg" alt="" />
@@ -767,86 +777,10 @@
                             </button>
                           </td>
                         </tr>
-                        <tr class="first-row">
-                          <th scope="row justify-content-center align-items-center">
-                            <input type="checkbox" class="chk-box" />
-                          </th>
-                          <td>
-                            <div class="userNo">01</div>
-                          </td>
-                          <td>
-                            <div class="d-flex flex-row align-items-center userName">
-                              <img src="./img/list/list-users.png" alt="" />Jordan
-                              Stevenson
-                            </div>
-                          </td>
-                          <td>
-                            <div class="userHandle">@jordenstevenson</div>
-                          </td>
-                          <td>
-                            <a href="mailto:Jaylon_Bartell3@gmail.com" class="userNo">Jaylon_Bartell3@gmail.com</a>
-                          </td>
-                          <td class="td-num">
-                            <a href="tel:+1 718.212.2222" class="userNum">+1 718.212.2222</a>
-                          </td>
-                          <td>
-                            <div class="userInactive">Inactive</div>
-                          </td>
-                          <td>
-                            <div class="userNo">7/29/2024</div>
-                          </td>
-                          <td class="d-flex flex-row">
-                            <button class="btn btn-crud">
-                              <img src="./img/list/view.svg" alt="" />
-                            </button>
-                            <button class="btn btn-crud">
-                              <img src="./img/list/edit.svg" alt="" />
-                            </button>
-                            <button class="btn btn-crud" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                              <img src="./img/list/delete.svg" alt="" />
-                            </button>
-                          </td>
-                        </tr>
-                        <tr class="second-row">
-                          <th scope="row justify-content-center align-items-center">
-                            <input type="checkbox" class="chk-box" />
-                          </th>
-                          <td>
-                            <div class="userNo">01</div>
-                          </td>
-                          <td>
-                            <div class="d-flex flex-row align-items-center userName">
-                              <img src="./img/list/list-users.png" alt="" />Jordan
-                              Stevenson
-                            </div>
-                          </td>
-                          <td>
-                            <div class="userHandle">@jordenstevenson</div>
-                          </td>
-                          <td>
-                            <a href="mailto:Jaylon_Bartell3@gmail.com" class="userNo">Jaylon_Bartell3@gmail.com</a>
-                          </td>
-                          <td class="td-num">
-                            <a href="tel:+1 718.212.2222" class="userNum">+1 718.212.2222</a>
-                          </td>
-                          <td>
-                            <div class="userActive">Active</div>
-                          </td>
-                          <td>
-                            <div class="userNo">7/29/2024</div>
-                          </td>
-                          <td class="d-flex flex-row">
-                            <button class="btn btn-crud">
-                              <img src="./img/list/view.svg" alt="" />
-                            </button>
-                            <button class="btn btn-crud">
-                              <img src="./img/list/edit.svg" alt="" />
-                            </button>
-                            <button class="btn btn-crud" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                              <img src="./img/list/delete.svg" alt="" />
-                            </button>
-                          </td>
-                        </tr>
+
+
+
+
                       </tbody>
                     </table>
                   </div>
@@ -878,8 +812,12 @@
       </main>
     </div>
     <!-- content area end -->
-    <!-- Popup design  -->
 
+
+
+
+    <!-- Popup design  -->
+    <!-- Button trigger modal -->
 
     <!-- Modal -->
     <div class="modal fade customModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -967,8 +905,19 @@
     </div>
 
 
+
+
+
+
+
+
+
   </div>
   <!-- wrapper end  -->
+
+
+
+
 
   <script type="application/javascript"
     src="http://postersz.com/admin/admin/assets/vendor/apexcharts/apexcharts.min.js"></script>
@@ -996,9 +945,9 @@
   <!-- custom js  -->
   <!-- When you use this code please remove this bootstrap cdn  -->
   <!-- I use this because of you use HTPP this not suppport on github or other platforms.  -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
 
 </body>
 
