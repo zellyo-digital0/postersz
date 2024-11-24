@@ -1142,6 +1142,7 @@ ul {
   background-color: transparent;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  text-transform: uppercase;
 }
 .table th:first-child {
   text-align: center;
@@ -1800,6 +1801,27 @@ input[type='checkbox']:focus {
   color: #56ca00;
   border-radius: 30px;
 }
+.StatusActive .StatusActiveItem .userPublic {
+  color: #007aff;
+  background-color: rgba(0, 122, 255, 0.15);
+}
+.table td a {
+  color: #3b93cf;
+}
+.userPublic {
+  background-color: rgba(0, 122, 255, 0.15);
+  color: #007aff;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+  border-radius: 30px;
+  text-align: center;
+  padding: 4px 12px;
+}
+.userPublic.userPrivate {
+  color: #ff3b30;
+  background-color: rgba(255, 0, 0, 0.15);
+}
 /* 
 
 
@@ -1945,6 +1967,9 @@ input[type='checkbox']:focus {
   }
   .user-form input {
     height: 48px;
+    font-size: 14px;
+  }
+  .user-form textarea {
     font-size: 14px;
   }
   .user-form label {
