@@ -1028,6 +1028,62 @@ ul {
   font-weight: 500;
   color: #29a4da;
 }
+.btn-up {
+  margin: 0px;
+  padding: 13px 38px;
+  text-align: center;
+  text-transform: capitalize;
+  transition: 0.5s;
+  background-color: #adadad;
+  background-size: 200% auto;
+  color: #000;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #adadad;
+}
+.btn-up img {
+  width: 16px;
+}
+.btn-up:hover {
+  background-color: #797777;
+}
+.btn-ex {
+  margin: 0px;
+  padding: 13px 38px;
+  text-align: center;
+  text-transform: capitalize;
+  transition: 0.5s;
+  background-color: transparent;
+  background-size: 200% auto;
+  color: #000;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid #adadad;
+}
+.btn-ex img {
+  width: 16px;
+}
+.btn-ex:hover {
+  background-color: #adadad;
+}
+#btn-sub {
+  background-image: none;
+  background-color: transparent;
+  border: 1px solid #3c92cf;
+  color: #3c92cf;
+}
+#btn-sub:hover {
+  color: white;
+  background-color: #3c92cf;
+}
 
 /* full page end */
 
@@ -1118,7 +1174,9 @@ ul {
   border-radius: 0.625rem;
   box-shadow: 0 0.125rem 0.5rem rgba(99, 99, 99, 0.2);
 }
-
+#edit-cat-form {
+  padding: 0;
+}
 /* Table core styles */
 .table {
   width: 100%;
@@ -1333,6 +1391,12 @@ input[type='checkbox']:focus {
 .userHandle {
   color: rgba(45, 37, 60, 0.9);
   font-weight: 500;
+}
+.text-gray {
+  color: rgb(46 38 61 / 70%) !important;
+}
+.name-tech span {
+  font-size: 12px;
 }
 
 /* Status badges */
@@ -1822,6 +1886,18 @@ input[type='checkbox']:focus {
   color: #ff3b30;
   background-color: rgba(255, 0, 0, 0.15);
 }
+
+.wrapper .leftSide nav .navWrapper .navItem li .text-sky,
+.text-sky {
+  color: #3e90ce;
+}
+.csfurwidth {
+  width: 136px;
+}
+.sub-breadcrumb {
+  color: #2e263dda;
+  font-size: 18px;
+}
 /* 
 
 
@@ -1869,6 +1945,9 @@ input[type='checkbox']:focus {
 
 /* ==user list end== */
 @media (max-width: 1540px) {
+  .search-form {
+    max-width: 460px;
+  }
   .user-left2 .avatar-content a {
     font-size: 12px;
   }

@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Favicons -->
+    <link
+        href="data:image/png;base64,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"
+        rel="icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postersz App</title>
+    <!-- Vendor CSS Files -->
+    <link href="http://postersz.com/admin/admin/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://postersz.com/admin/admin/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="http://postersz.com/admin/admin/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="http://postersz.com/admin/admin/assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="http://postersz.com/admin/admin/assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="http://postersz.com/admin/admin/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="http://postersz.com/admin/admin/assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <script type="module" crossorigin src="http://postersz.com/admin/admin/assets/index-b0775b45.js"></script>
+    <link rel="stylesheet" href="http://postersz.com/admin/admin/assets/index-f21bdcfc.css">
+    <script type="module" crossorigin src="http://postersz.com/admin/assets/index-39d29437.js"></script>
+    <link rel="stylesheet" href="http://postersz.com/admin/assets/index-3f23c353.css">
+
+    <!-- Custom css -->
+    <!-- When you use this code please remove this bootstrap cdn  -->
+    <!-- I use this because of you use HTPP this not suppport on github or other platforms.  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/custom.css" />
+
+    <title>Postersz App</title>
+</head>
+
+<body>
+
+
+    <!-- wrapper start  -->
+    <div class="wrapper relative ">
+
+
+        <div class="navbar-expand-lg">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header bg-transparent">
+                    <button type="button" class="btn-close bg-transparent" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <!-- Left side bar start  -->
+                    <aside class="position-fixed top-0 leftSide">
+                        <div class="logo">
+                            <a href=""><img src="img/logo.png" alt="logo" class="img-fluid"></a>
+                        </div>
+                        <nav>
+                            <!-- nav link start  -->
+                            <div class="navWrapper">
+                                <div class="navMain ">
+                                    <a href="" class="">
+                                        <span>Dashboard</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- nav link end  -->
+
+                            <!-- nav link start  -->
+                            <div class="navWrapper">
+                                <div class="navMain">
+                                    <a href="" class="active">
+                                        <span>Lists</span>
+                                    </a>
+                                </div>
+                                <ul class="navItem">
+                                    <li><a href="">Users</a></li>
+                                    <li><a href="">Companies</a></li>
+                                    <li><a href="">Posts</a></li>
+                                    <li><a href="">Ads</a></li>
+                                    <li><a href="">Listings (Looking For)</a></li>
+                                    <li><a href="">Deals</a></li>
+                                    <li><a href="">Deal Share</a></li>
+                                    <li><a href="">Communities</a></li>
+                                    <li><a href="">Comments</a></li>
+                                    <li><a href="">Products & Services</a></li>
+                                    <li><a href="">Master</a></li>
+                                    <li><a href="" class="text-sky">Wallets</a></li>
+                                    <li><a href="">Transactions</a></li>
+                                    <li><a href="">Web Feed Page Ads</a></li>
+                                    <li><a href="">LCR</a></li>
+                                </ul>
+                            </div>
+                            <!-- nav link end  -->
+
+                            <!-- nav link start  -->
+                            <div class="navWrapper">
+                                <div class="navMain">
+                                    <a href="">
+                                        <span>Requests</span>
+                                    </a>
+                                </div>
+                                <ul class="navItem">
+                                    <li><a href="">Claimed Business</a></li>
+                                    <li><a href="">Ad Requests</a></li>
+                                    <li><a href="">New Community Request</a></li>
+                                    <li><a href="">Disputes</a></li>
+                                </ul>
+                            </div>
+                            <!-- nav link end  -->
+
+                            <!-- nav link start  -->
+                            <div class="navWrapper">
+                                <div class="navMain">
+                                    <a href="">
+                                        <span>General Settings</span>
+                                    </a>
+                                </div>
+                                <ul class="navItem">
+                                    <li><a href="">Plans</a></li>
+                                    <li><a href="">Point Accumulation</a></li>
+                                    <li><a href="">Notification Setup</a></li>
+                                    <li><a href="">Email Template Setup</a></li>
+                                    <li><a href="">FAQs</a></li>
+                                </ul>
+                            </div>
+                            <!-- nav link end  -->
+
+
+                        </nav>
+                    </aside>
+                    <!-- Left side bar end  -->
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- header start  -->
+        <header class="position-sticky top-0 mainHeader">
+            <div class="d-flex w-100 justify-content-between align-self-center align-items-center ">
+                <div class="headerLeft d-lg-block d-none">
+                    <ul class="d-flex flex-row">
+                        <li><a href="">Lists</a></li>
+
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.0607 13.0607C17.6464 12.4749 17.6464 11.5251 17.0607 10.9393L7.51472 1.3934C6.92893 0.807611 5.97919 0.807611 5.3934 1.3934C4.80761 1.97919 4.80761 2.92893 5.3934 3.51472L13.8787 12L5.3934 20.4853C4.80761 21.0711 4.80761 22.0208 5.3934 22.6066C5.97919 23.1924 6.92893 23.1924 7.51472 22.6066L17.0607 13.0607ZM14 13.5H16V10.5H14V13.5Z"
+                                    fill="#000000" />
+                            </svg>
+
+                        </li>
+                        <li>Wallets</li>
+                    </ul>
+                </div>
+                <div class="d-lg-none d-block">
+                    <button class="btn  border" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="headerRight d-flex align-self-center align-items-center">
+                    <!-- single dropdown start  -->
+                    <div class="dropdown notifications">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="img/notifications.svg" alt="img" class="img-fluid">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <!-- single dropdown end -->
+                    <!-- single dropdown start  -->
+                    <div class="dropdown user">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="img/user.png" alt="img" class="img-fluid">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <!-- single dropdown end -->
+                </div>
+            </div>
+        </header>
+        <!-- header end  -->
+
+        <!-- content area start  -->
+        <main class="userList">
+
+            <div class="row">
+                <!-- top -->
+                <div class="col-12 pb-4">
+                    <div
+                        class="d-flex flex-md-row flex-column justify-content-xl-between justify-content-center flex-wrap align-items-center gap-3 gap-md-4">
+                        <div class="search-form">
+                            <button class="btn p-0 outline-0" type="submit"><img src="./img/list/search.svg"
+                                    alt="search icon" /></button>
+                            <input type="search" class="form-control form-input border-0"
+                                placeholder="Search Wallets" />
+                        </div>
+                        <div
+                            class="addUser d-flex gap-3 flex-wrap flex-md-nowrap justify-content-between justify-content-md-start">
+                            <a href="#" class="btn btn-ex px-3">
+                                <span><img src="./img/pro-ser/export.svg" alt="export"></span>
+                                <span>Export to Excel</span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- middle -->
+
+                <!-- bottom -->
+                <div class="col-12">
+                    <div class="list-users">
+                        <!-- table -->
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr class="table-header">
+                                        <th scope="col" class="th-checkbox">
+                                            <input type="checkbox" class="chk-box">
+                                        </th>
+                                        <th scope="col" class="th-no">
+                                            <a href="#" class="userHeading">
+                                                ID <img src="./img/list/sort.svg" alt="sort">
+                                            </a>
+                                        </th>
+                                        <th scope="col" class="userHeading-size">
+                                            <a href="#" class="userHeading">
+                                                user <img src="./img/list/sort.svg" alt="sort">
+                                            </a>
+                                        </th>
+                                        <th scope="col">
+                                            <a href="#" class="userHeading">
+                                                Ttoal Credit Earned <img src="./img/list/sort.svg" alt="sort">
+                                            </a>
+                                        </th>
+                                        <th scope="col">
+                                            <a href="#" class="userHeading">
+                                                Total Credit Used <img src="./img/list/sort.svg" alt="sort">
+                                            </a>
+                                        </th>
+
+                                        <th scope="col">
+                                            <a href="#" class="userHeading">
+                                                Remaining Credits <img src="./img/list/sort.svg" alt="sort">
+                                            </a>
+                                        </th>
+                                        <th scope="col">
+                                            <div class="userHeading">ACTION</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="first-row">
+                                        <th scope="row justify-content-center align-items-center">
+                                            <input type="checkbox" class="chk-box">
+                                        </th>
+                                        <td>
+                                            <div class="userNo">01</div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-row align-items-center userName">
+                                                <img src="./img/list/list-users.png" alt="">Jordan Stevenson
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> +$100.00</div>
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> -$10.00</div>
+
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> $90.00</div>
+                                        </td>
+
+                                        <td class="d-flex flex-row">
+                                            <button class="btn btn-crud">
+                                                <img src="./img/list/view.svg" alt="">
+                                            </button>
+
+                                        </td>
+                                    </tr>
+                                    <tr class="second-row">
+                                        <th scope="row justify-content-center align-items-center">
+                                            <input type="checkbox" class="chk-box">
+                                        </th>
+                                        <td>
+                                            <div class="userNo">01</div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-row align-items-center userName">
+                                                <img src="./img/list/list-users.png" alt="">Jordan Stevenson
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> +$100.00</div>
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> -$10.00</div>
+
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> $90.00</div>
+                                        </td>
+
+                                        <td class="d-flex flex-row">
+                                            <button class="btn btn-crud">
+                                                <img src="./img/list/view.svg" alt="">
+                                            </button>
+
+                                        </td>
+                                    </tr>
+                                    <tr class="first-row">
+                                        <th scope="row justify-content-center align-items-center">
+                                            <input type="checkbox" class="chk-box">
+                                        </th>
+                                        <td>
+                                            <div class="userNo">01</div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-row align-items-center userName">
+                                                <img src="./img/list/list-users.png" alt="">Jordan Stevenson
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> +$100.00</div>
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> -$10.00</div>
+
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> $90.00</div>
+                                        </td>
+
+                                        <td class="d-flex flex-row">
+                                            <button class="btn btn-crud">
+                                                <img src="./img/list/view.svg" alt="">
+                                            </button>
+
+                                        </td>
+                                    </tr>
+                                    <tr class="second-row">
+                                        <th scope="row justify-content-center align-items-center">
+                                            <input type="checkbox" class="chk-box">
+                                        </th>
+                                        <td>
+                                            <div class="userNo">01</div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-row align-items-center userName">
+                                                <img src="./img/list/list-users.png" alt="">Jordan Stevenson
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> +$100.00</div>
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> -$10.00</div>
+
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> $90.00</div>
+                                        </td>
+
+                                        <td class="d-flex flex-row">
+                                            <button class="btn btn-crud">
+                                                <img src="./img/list/view.svg" alt="">
+                                            </button>
+
+                                        </td>
+                                    </tr>
+                                    <tr class="first-row">
+                                        <th scope="row justify-content-center align-items-center">
+                                            <input type="checkbox" class="chk-box">
+                                        </th>
+                                        <td>
+                                            <div class="userNo">01</div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-row align-items-center userName">
+                                                <img src="./img/list/list-users.png" alt="">Jordan Stevenson
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> +$100.00</div>
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> -$10.00</div>
+
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> $90.00</div>
+                                        </td>
+
+                                        <td class="d-flex flex-row">
+                                            <button class="btn btn-crud">
+                                                <img src="./img/list/view.svg" alt="">
+                                            </button>
+
+                                        </td>
+                                    </tr>
+                                    <tr class="second-row">
+                                        <th scope="row justify-content-center align-items-center">
+                                            <input type="checkbox" class="chk-box">
+                                        </th>
+                                        <td>
+                                            <div class="userNo">01</div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-row align-items-center userName">
+                                                <img src="./img/list/list-users.png" alt="">Jordan Stevenson
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> +$100.00</div>
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> -$10.00</div>
+
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> $90.00</div>
+                                        </td>
+
+                                        <td class="d-flex flex-row">
+                                            <button class="btn btn-crud">
+                                                <img src="./img/list/view.svg" alt="">
+                                            </button>
+
+                                        </td>
+                                    </tr>
+                                    <tr class="first-row">
+                                        <th scope="row justify-content-center align-items-center">
+                                            <input type="checkbox" class="chk-box">
+                                        </th>
+                                        <td>
+                                            <div class="userNo">01</div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-row align-items-center userName">
+                                                <img src="./img/list/list-users.png" alt="">Jordan Stevenson
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> +$100.00</div>
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> -$10.00</div>
+
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> $90.00</div>
+                                        </td>
+
+                                        <td class="d-flex flex-row">
+                                            <button class="btn btn-crud">
+                                                <img src="./img/list/view.svg" alt="">
+                                            </button>
+
+                                        </td>
+                                    </tr>
+                                    <tr class="second-row">
+                                        <th scope="row justify-content-center align-items-center">
+                                            <input type="checkbox" class="chk-box">
+                                        </th>
+                                        <td>
+                                            <div class="userNo">01</div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-row align-items-center userName">
+                                                <img src="./img/list/list-users.png" alt="">Jordan Stevenson
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> +$100.00</div>
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> -$10.00</div>
+
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> $90.00</div>
+                                        </td>
+
+                                        <td class="d-flex flex-row">
+                                            <button class="btn btn-crud">
+                                                <img src="./img/list/view.svg" alt="">
+                                            </button>
+
+                                        </td>
+                                    </tr>
+                                    <tr class="first-row">
+                                        <th scope="row justify-content-center align-items-center">
+                                            <input type="checkbox" class="chk-box">
+                                        </th>
+                                        <td>
+                                            <div class="userNo">01</div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-row align-items-center userName">
+                                                <img src="./img/list/list-users.png" alt="">Jordan Stevenson
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> +$100.00</div>
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> -$10.00</div>
+
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> $90.00</div>
+                                        </td>
+
+                                        <td class="d-flex flex-row">
+                                            <button class="btn btn-crud">
+                                                <img src="./img/list/view.svg" alt="">
+                                            </button>
+
+                                        </td>
+                                    </tr>
+                                    <tr class="second-row">
+                                        <th scope="row justify-content-center align-items-center">
+                                            <input type="checkbox" class="chk-box">
+                                        </th>
+                                        <td>
+                                            <div class="userNo">01</div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-row align-items-center userName">
+                                                <img src="./img/list/list-users.png" alt="">Jordan Stevenson
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> +$100.00</div>
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> -$10.00</div>
+
+                                        </td>
+                                        <td>
+                                            <div class="text-gray"> $90.00</div>
+                                        </td>
+
+                                        <td class="d-flex flex-row">
+                                            <button class="btn btn-crud">
+                                                <img src="./img/list/view.svg" alt="">
+                                            </button>
+
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- pagination -->
+                        <div class="pagination d-flex flex-column flex-md-row justify-content-end align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <h4>Rows per page:</h4>
+                                <select name="" id="" class="pagiSelect">
+                                    <option value="10">10</option>
+                                    <option value="20">20</option>
+                                    <option value="30">30</option>
+                                </select>
+                            </div>
+                            <div class="d-flex align-items-center page-no">
+                                <span>1-5</span>
+                                <span>of</span>
+                                <span>13</span>
+                            </div>
+                            <div>
+                                <a href="#" class="btn btn-pagiBtn"><img src="./img/list/arrow-left.svg" alt=""></a>
+                                <a href="#" class="btn btn-pagiBtn"><img src="./img/list/arrow-right.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- content area end -->
+
+
+
+    </div>
+    <!-- wrapper end  -->
+
+
+
+
+
+    <script type="application/javascript"
+        src="http://postersz.com/admin/admin/assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script type="application/javascript"
+        src="http://postersz.com/admin/admin/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="application/javascript"
+        src="http://postersz.com/admin/admin/assets/vendor/chart.js/chart.umd.js"></script>
+    <script type="application/javascript"
+        src="http://postersz.com/admin/admin/assets/vendor/echarts/echarts.min.js"></script>
+    <script type="application/javascript"
+        src="http://postersz.com/admin/admin/assets/vendor/quill/quill.min.js"></script>
+    <script type="application/javascript"
+        src="http://postersz.com/admin/admin/assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script type="application/javascript"
+        src="http://postersz.com/admin/admin/assets/vendor/tinymce/tinymce.min.js"></script>
+    <script type="application/javascript"
+        src="http://postersz.com/admin/admin/assets/vendor/php-email-form/validate.js"></script>
+    <script type="application/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Template Main JS File -->
+    <script type="application/javascript" src="http://postersz.com/admin/admin/assets/js/main.js"></script>
+
+
+    <!-- custom js  -->
+    <!-- When you use this code please remove this bootstrap cdn  -->
+    <!-- I use this because of you use HTPP this not suppport on github or other platforms.  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- custom js  -->
+    <script src="./js/custom.js"></script>
+
+</body>
+
+</html>
