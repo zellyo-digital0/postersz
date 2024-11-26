@@ -94,7 +94,7 @@ ul {
   height: 60px;
   border-radius: 6px;
   font-size: 15px;
-  color: rgb(46 38 61 / 60%);
+  color: rgb(46 38 61 / 100%);
   margin-top: 14px;
   padding-left: 19px;
 }
@@ -630,7 +630,7 @@ ul {
   font-weight: 400;
   border-radius: 6px;
   font-size: 15px;
-  color: rgb(46 38 61 / 60%);
+  color: rgb(46 38 61 / 100%);
   margin-top: 6px;
   padding-left: 14px;
 }
@@ -639,12 +639,13 @@ ul {
   font-weight: 400;
   border-radius: 6px;
   font-size: 15px;
-  color: rgb(46 38 61 / 40%);
+  color: rgb(46 38 61 / 100%);
   margin-top: 6px;
   padding-left: 14px;
 }
 .user-form input::placeholder,
-.user-form select {
+.user-form select,
+.user-form textarea::placeholder {
   color: rgb(46 38 61 / 40%);
 }
 

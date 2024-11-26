@@ -271,14 +271,14 @@
                 <div class="row" id="user-form-row">
                   <div class="col-md-3">
                     <div>
-                      <label for="name">Posted By:</label>
+                      <label for="name">Posted By</label>
                       <input type="text" name="name" id="name" placeholder="John Doe" class="form-control">
                     </div>
                   </div>
 
                   <div class="col-md-3">
                     <div>
-                      <label for="Company">Company Name:</label>
+                      <label for="Company">Company Name</label>
                       <select class="form-select" aria-label="Default select example">
                         <option selected>Company Name</option>
                         <option value="1">One</option>
@@ -289,7 +289,7 @@
                   </div>
                   <div class="col-md-2">
                     <div>
-                      <label for="Active">Post Status:</label>
+                      <label for="Active">Post Status</label>
                       <select class="form-select" aria-label="Default select example">
                         <option selected>Active</option>
                         <option value="1">Deactive</option>
@@ -299,7 +299,7 @@
 
                   <div class="col-md-2">
                     <div>
-                      <label for="Active">Boosted:</label>
+                      <label for="Active">Boosted</label>
                       <select class="form-select" aria-label="Default select example">
                         <option selected>Yes</option>
                         <option value="1">No</option>
@@ -310,76 +310,98 @@
 
                   <div class="col-md-12">
                     <div>
-                      <label for="title">Post Title:</label>
+                      <label for="title">Post Title</label>
                       <input type="text" name="number" id="number" placeholder="Post title here..."
                         class="form-control">
                     </div>
                   </div>
 
 
-
-
-
                   <div class="col-md-12">
                     <div>
-                      <label for="Twtter">Post Keywords:</label>
-                      <div class="tagsInput mt-2">
-                        <select class="form-select" aria-label="Default select example">
-                          <option selected>Item</option>
-                          <option value="1">Item</option>
+                      <label for="Twitter">Post Keywords</label>
+                      <div class="tagsInput mt-2 community-container">
+                        <select class="form-select communitySelector" aria-label="Default select example">
+                          <option value="" disabled selected>Select</option>
+                          <option value="Simcha HQ 1">Simcha HQ 1</option>
+                          <option value="Simcha HQ 2">Simcha HQ 2</option>
+                          <option value="Simcha HQ 3">Simcha HQ 3</option>
+                          <option value="Simcha HQ 4">Simcha HQ 4</option>
+                          <option value="Simcha HQ 5">Simcha HQ 5</option>
                         </select>
-                        <div class="tagsInputItem editTagsInputItem">
-                          <span class="position-relative">Simcha HQ <button class="removeTag btn p-0"><svg width="18"
-                                height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="tagsInputItem editTagsInputItem selectedCommunities">
+                          <!-- Default communities will be dynamically added here -->
+                          <span class="position-relative" data-value="Simcha HQ">
+                            Simcha HQ
+                            <button class="removeTag btn p-0">
+                              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="9" cy="9" r="8.5" fill="white" stroke="#13BAE9"></circle>
                                 <path
                                   d="M7.25511 5.16364L9.37216 8.77642L11.4892 5.16364H13.054L10.2006 9.58182L13.054 14H11.4892L9.37216 10.5713L7.25511 14H5.69034L8.49773 9.58182L5.69034 5.16364H7.25511Z"
                                   fill="#14B9E8"></path>
                               </svg>
-                            </button></span>
-                          <span class="position-relative">Simcha HQ <button class="removeTag btn p-0"><svg width="18"
-                                height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            </button>
+                          </span>
+
+                          <span class="position-relative" data-value="Simcha HQ">
+                            Simcha HQ
+                            <button class="removeTag btn p-0">
+                              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="9" cy="9" r="8.5" fill="white" stroke="#13BAE9"></circle>
                                 <path
                                   d="M7.25511 5.16364L9.37216 8.77642L11.4892 5.16364H13.054L10.2006 9.58182L13.054 14H11.4892L9.37216 10.5713L7.25511 14H5.69034L8.49773 9.58182L5.69034 5.16364H7.25511Z"
                                   fill="#14B9E8"></path>
                               </svg>
-                            </button></span>
+                            </button>
+                          </span>
+
                         </div>
                       </div>
                     </div>
                   </div>
 
-
                   <div class="col-md-12">
                     <div>
-                      <label for="Twtter">Communities:</label>
-
-                      <div class="tagsInput mt-2">
-                        <select class="form-select" aria-label="Default select example">
-                          <option>Commuinty</option>
-                          <option>Commuinty</option>
-                          <option>Commuinty</option>
-                          <option>Commuinty</option>
-                          <option>Commuinty</option>
+                      <label for="Twitter">Communities:</label>
+                      <div class="tagsInput mt-2 community-container">
+                        <select class="form-select communitySelector" aria-label="Default select example">
+                          <option value="" disabled selected>Select</option>
+                          <option value="Community 1">Community 1</option>
+                          <option value="Community 2">Community 2</option>
+                          <option value="Community 3">Community 3</option>
+                          <option value="Community 4">Community 4</option>
+                          <option value="Community 5">Community 5</option>
                         </select>
-                        <div class="tagsInputItem editTagsInputItem">
-                          <span class="position-relative">Commuinty 1 <button class="removeTag btn p-0"><svg width="18"
-                                height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="tagsInputItem editTagsInputItem selectedCommunities">
+                          <!-- Default communities will be dynamically added here -->
+                          <span class="position-relative" data-value="Simcha HQ">
+                            Simcha HQ
+                            <button class="removeTag btn p-0">
+                              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="9" cy="9" r="8.5" fill="white" stroke="#13BAE9"></circle>
                                 <path
                                   d="M7.25511 5.16364L9.37216 8.77642L11.4892 5.16364H13.054L10.2006 9.58182L13.054 14H11.4892L9.37216 10.5713L7.25511 14H5.69034L8.49773 9.58182L5.69034 5.16364H7.25511Z"
                                   fill="#14B9E8"></path>
                               </svg>
-                            </button></span>
-                          <span class="position-relative">Commuinty 2 <button class="removeTag btn p-0"><svg width="18"
-                                height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            </button>
+                          </span>
+
+                          <span class="position-relative" data-value="Simcha HQ">
+                            Simcha HQ
+                            <button class="removeTag btn p-0">
+                              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="9" cy="9" r="8.5" fill="white" stroke="#13BAE9"></circle>
                                 <path
                                   d="M7.25511 5.16364L9.37216 8.77642L11.4892 5.16364H13.054L10.2006 9.58182L13.054 14H11.4892L9.37216 10.5713L7.25511 14H5.69034L8.49773 9.58182L5.69034 5.16364H7.25511Z"
                                   fill="#14B9E8"></path>
                               </svg>
-                            </button></span>
+                            </button>
+                          </span>
+
                         </div>
                       </div>
                     </div>
@@ -390,7 +412,7 @@
 
                   <div class="col-md-4">
                     <div>
-                      <label for="date">Created Date:</label>
+                      <label for="date">Created Date</label>
                       <input type="datetime-local" name="datetime" id="datetime" value="2024-07-20T16:00"
                         class="form-control">
 
@@ -399,7 +421,7 @@
 
                   <div class="col-md-4">
                     <div>
-                      <label for="date">Expiration Date:</label>
+                      <label for="date">Expiration Date</label>
                       <input type="datetime-local" name="datetime" id="datetime" value="2024-07-20T16:00"
                         class="form-control">
 
@@ -510,7 +532,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-
   <!-- custom js  -->
   <script src="./js/custom.js"></script>
 
