@@ -69,3 +69,95 @@ $(document).ready(function () {
 });
 
 
+
+
+// text editor in email template modal 
+const editableDiv = document.querySelector('.template-body');
+const hiddenTextarea = document.getElementById('template');
+
+/**
+ * Format text (e.g., bold, italic).
+ * @param {string} command - The formatting command (e.g., 'bold', 'italic').
+ */
+function formatText(command) {
+    document.execCommand(command, false, null);
+    syncContentToTextarea();
+}
+
+/**
+ * Change paragraph type (e.g., H1, H2, H3, Paragraph).
+ * @param {HTMLElement} selectElement - The dropdown element.
+ */
+function setParagraphType(selectElement) {
+    const type = selectElement.value;
+    document.execCommand('formatBlock', false, type);
+    syncContentToTextarea();
+}
+
+/**
+ * Add a hyperlink to the selected text.
+ */
+function addLink() {
+    const selection = window.getSelection();
+    const url = prompt("Enter the URL:", "https://");
+    if (selection.rangeCount > 0 && url) {
+        const range = selection.getRangeAt(0);
+        const link = document.createElement('a');
+        link.href = url;
+        link.target = '_blank';
+        link.appendChild(range.extractContents());
+        range.insertNode(link);
+        syncContentToTextarea();
+    }
+}
+
+/**
+ * Trigger file upload dialog for adding an image.
+ */
+function triggerImageUpload() {
+    document.getElementById('imageUpload').click();
+}
+
+/**
+ * Handle the uploaded image and insert it into the editable content.
+ * @param {Event} event - The file input change event.
+ */
+function handleImageUpload(event) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+            const selection = window.getSelection();
+            const range = selection.getRangeAt(0);
+            const img = document.createElement('img');
+            img.src = e.target.result; // Base64 image data
+            img.style.maxWidth = '100%';
+            img.style.height = 'auto';
+
+            range.insertNode(img);
+            syncContentToTextarea();
+        };
+
+        reader.readAsDataURL(file); // Convert the image to a Base64 URL
+    }
+}
+
+/**
+ * Sync content from the editable div to the hidden textarea for form submission.
+ */
+function syncContentToTextarea() {
+    hiddenTextarea.value = editableDiv.innerHTML;
+}
+
+/**
+ * Load content from the textarea to the editor on page load (if any).
+ */
+document.addEventListener('DOMContentLoaded', () => {
+    if (hiddenTextarea.value.trim()) {
+        editableDiv.innerHTML = hiddenTextarea.value;
+    }
+
+    editableDiv.addEventListener('input', syncContentToTextarea);
+});
+
