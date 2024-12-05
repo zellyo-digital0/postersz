@@ -32,9 +32,11 @@ ul {
 #sub-banner {
   width: 100%;
   height: 234px;
-  background: linear-gradient(90deg,
-      rgba(66, 141, 203, 1) 0%,
-      rgba(12, 193, 236, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(66, 141, 203, 1) 0%,
+    rgba(12, 193, 236, 1) 100%
+  );
 }
 
 .registration {
@@ -147,9 +149,11 @@ ul {
   border-radius: 6px;
   color: white;
   font-size: 15px;
-  background: linear-gradient(90deg,
-      rgba(66, 141, 203, 1) 0%,
-      rgba(12, 193, 236, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(66, 141, 203, 1) 0%,
+    rgba(12, 193, 236, 1) 100%
+  );
 }
 
 /* dashboard start here  */
@@ -594,9 +598,11 @@ ul {
 }
 
 .edit-btn button {
-  background: linear-gradient(90deg,
-      rgba(66, 141, 203, 1) 0%,
-      rgba(12, 193, 236, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(66, 141, 203, 1) 0%,
+    rgba(12, 193, 236, 1) 100%
+  );
   border: none;
   padding: 8px 14px;
   color: white;
@@ -850,9 +856,11 @@ ul {
   width: 0%;
   height: 100%;
   transition: all ease-in-out 0.6s;
-  background: linear-gradient(90deg,
-      rgb(64, 142, 204) 0%,
-      rgb(14, 191, 235) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(64, 142, 204) 0%,
+    rgb(14, 191, 235) 100%
+  );
   border-radius: 4px;
 }
 
@@ -943,7 +951,8 @@ ul {
   color: #979797;
 }
 
-.wrapper header .headerLeft ul li svg {}
+.wrapper header .headerLeft ul li svg {
+}
 
 .wrapper header .headerLeft h1 {
   font-weight: 600;
@@ -1012,10 +1021,12 @@ ul {
 
 .btn-cst,
 .btn-cst2 {
-  background-image: linear-gradient(to right,
-      #3e90ce 0%,
-      #28a6db 50%,
-      #11bce9 100%);
+  background-image: linear-gradient(
+    to right,
+    #3e90ce 0%,
+    #28a6db 50%,
+    #11bce9 100%
+  );
 }
 
 .btn-cst {
@@ -1493,7 +1504,7 @@ input[type='checkbox']:focus {
 }
 
 .userPublic {
-  color: #007AFF;
+  color: #007aff;
   background-color: #007bff34;
 }
 
@@ -1560,7 +1571,7 @@ input[type='checkbox']:focus {
 }
 
 .text-red {
-  color: #FF3B30 !important;
+  color: #ff3b30 !important;
 }
 
 .TotalCreditsText {
@@ -1617,7 +1628,8 @@ input[type='checkbox']:focus {
   padding-right: 20px;
 }
 
-.bannerImage {}
+.bannerImage {
+}
 
 .bannerImage p {
   color: #2e263d;
@@ -1628,9 +1640,11 @@ input[type='checkbox']:focus {
   padding-left: 12px;
 }
 
-.bannerImage .bannerImageItem {}
+.bannerImage .bannerImageItem {
+}
 
-.bannerImage .bannerImageItem .uploadImage {}
+.bannerImage .bannerImageItem .uploadImage {
+}
 
 .bannerImage .bannerImageItem .uploadImage img {
   width: 100%;
@@ -1648,7 +1662,8 @@ input[type='checkbox']:focus {
   position: relative;
 }
 
-.tagsInput input {}
+.tagsInput input {
+}
 
 .tagsInput .tagsInputItem {
   display: flex;
@@ -1661,9 +1676,11 @@ input[type='checkbox']:focus {
 }
 
 .tagsInput .tagsInputItem span {
-  background: linear-gradient(90deg,
-      rgb(64, 142, 204) 0%,
-      rgb(14, 191, 235) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(64, 142, 204) 0%,
+    rgb(14, 191, 235) 100%
+  );
   padding: 8px 20px;
   color: #fff;
   font-weight: 400;
@@ -1724,7 +1741,8 @@ input[type='checkbox']:focus {
   background-image: none;
 }
 
-.totalPostNumber {}
+.totalPostNumber {
+}
 
 .totalPostNumber h4 {
   font-weight: 500;
@@ -1758,9 +1776,11 @@ input[type='checkbox']:focus {
 }
 
 .customModal .modal-header {
-  background: linear-gradient(90deg,
-      rgb(64, 142, 204) 0%,
-      rgb(14, 191, 235) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(64, 142, 204) 0%,
+    rgb(14, 191, 235) 100%
+  );
   border-radius: 0;
   color: #fff;
 }
@@ -1792,9 +1812,11 @@ input[type='checkbox']:focus {
 }
 
 .btnSave {
-  background: linear-gradient(90deg,
-      rgb(64, 142, 204) 0%,
-      rgb(14, 191, 235) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(64, 142, 204) 0%,
+    rgb(14, 191, 235) 100%
+  );
   color: #fff;
   width: 145px;
   max-width: 100%;
@@ -1842,7 +1864,8 @@ input[type='checkbox']:focus {
   line-height: 22px;
 }
 
-.customModal .deleteText {}
+.customModal .deleteText {
+}
 
 .customModal .deleteText h4 {
   font-size: 18px;
@@ -1871,7 +1894,8 @@ input[type='checkbox']:focus {
   line-height: 28px;
 }
 
-.TotalCreditsContent {}
+.TotalCreditsContent {
+}
 
 .TotalCreditsContent p {
   font-size: 15px;
@@ -2112,7 +2136,6 @@ form .fromBottom2 {
   height: 16px;
   width: 16px;
   pointer-events: none;
-
 }
 
 .custom-toggle .form-check-input {
@@ -2140,8 +2163,8 @@ form .fromBottom2 {
 }
 
 .custom-toggle .form-check-input:checked {
-  background-color: #17B6E5;
-  border-color: #17B6E5;
+  background-color: #17b6e5;
+  border-color: #17b6e5;
 }
 
 .togletitle {
@@ -2155,7 +2178,7 @@ form .fromBottom2 {
 }
 
 .totalremaining p {
-  color: #29A4DA;
+  color: #29a4da;
   font-size: 18px;
 }
 
@@ -2174,9 +2197,11 @@ form .fromBottom2 {
 }
 
 .btndis:hover {
-  background: linear-gradient(90deg,
-      rgb(64, 142, 204) 0%,
-      rgb(14, 191, 235) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(64, 142, 204) 0%,
+    rgb(14, 191, 235) 100%
+  );
 }
 
 .count {
@@ -2186,9 +2211,9 @@ form .fromBottom2 {
 }
 
 .count p {
-  color: #3B93CF;
+  color: #3b93cf;
   font-size: 15px;
-  border: 1px solid #3B93CF;
+  border: 1px solid #3b93cf;
   width: 34px;
   height: 34px;
   border-radius: 5px;
@@ -2201,12 +2226,12 @@ form .fromBottom2 {
 .count button {
   border: none;
   background: none;
-  color: #3B93CF;
+  color: #3b93cf;
   font-size: 15px;
 }
 
 .post {
-  color: #3B93CF;
+  color: #3b93cf;
   font-size: 15px;
   text-decoration: underline !important;
 }
@@ -2215,13 +2240,26 @@ form .fromBottom2 {
   color: rgb(46 38 61 / 70%);
   background: #f2f3f5;
   padding: 4px 12px;
-  border: 1px solid #D1CFD4;
+  border: 1px solid #d1cfd4;
   border-radius: 10px;
   margin-left: 90px;
   font-size: 15px;
   position: relative;
 }
-
+.comments-list .coment-txt::after {
+  content: '';
+  position: absolute;
+  left: -64px;
+  top: 12px;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 52px;
+  background: #d9d9d9;
+}
+.comments-list .ccomments-list.coment-txt::after {
+  height: 32px;
+  top: 0;
+}
 .coment-txt::before {
   content: '';
   position: absolute;
@@ -2230,10 +2268,22 @@ form .fromBottom2 {
   transform: translateY(-50%);
   width: 60px;
   height: 1px;
-  background: #D9D9D9;
+  background: #d9d9d9;
 }
 
-.adPosition-container {}
+@media (max-width: 1500px) {
+  .comments-list .ccomments-list.coment-txt::after {
+    height: 57px;
+    top: 0;
+  }
+  .comments-list .coment-txt::after {
+    top: 20px;
+    width: 1px;
+    height: 74px;
+  }
+}
+.adPosition-container {
+}
 
 .adPosition-container h3,
 .adPosition-right-inner p,
@@ -2245,7 +2295,7 @@ form .fromBottom2 {
 .adPosition-wraper {
   width: 100%;
   height: 230px;
-  border: 1px dashed #D1CFD4;
+  border: 1px dashed #d1cfd4;
   margin-top: 8px;
   display: flex;
   padding: 16px;
@@ -2265,15 +2315,15 @@ form .fromBottom2 {
 }
 
 .adPosition-left-1 {
-  border: 1px dashed #D1CFD4;
+  border: 1px dashed #d1cfd4;
   height: 41px;
   border-radius: 7px;
 }
 
 .adPosition-left-2 {
   flex-grow: 1;
-  background: #21ACDF;
-  border: 1px solid #21ACDF;
+  background: #21acdf;
+  border: 1px solid #21acdf;
   border-radius: 7px;
   display: flex;
   align-items: center;
@@ -2282,7 +2332,7 @@ form .fromBottom2 {
 
 .adPosition-middle {
   flex-grow: 1;
-  border: 1px dashed #D1CFD4;
+  border: 1px dashed #d1cfd4;
   border-radius: 7px;
   height: 196px;
 }
@@ -2296,7 +2346,7 @@ form .fromBottom2 {
 
 .adPosition-right-inner {
   border-radius: 4px;
-  border: 1px solid #21ACDF;
+  border: 1px solid #21acdf;
   height: 58px;
   display: flex;
   align-items: center;
@@ -2336,24 +2386,24 @@ form .fromBottom2 {
 
 .ad-img {
   font-size: 12px;
-  color: #3B93CF;
+  color: #3b93cf;
   gap: 8px;
   min-width: 107px;
 }
 
 .table-link-out {
   font-size: 12px;
-  color: #3B93CF;
+  color: #3b93cf;
 }
 
 .text-success-g {
   font-size: 15px;
-  color: #56CA00;
+  color: #56ca00;
 }
 
 .text-unsuccess {
   font-size: 15px;
-  color: #FF4C51;
+  color: #ff4c51;
 }
 
 .action-inner {
@@ -2373,8 +2423,8 @@ form .fromBottom2 {
 }
 
 .reject-btn {
-  color: #C60000;
-  border: 1px solid #C60000;
+  color: #c60000;
+  border: 1px solid #c60000;
 }
 
 .reject-btn:hover {
@@ -2382,12 +2432,12 @@ form .fromBottom2 {
 }
 
 .approve-btn {
-  color: #56CA00;
-  border: 1px solid #56CA00;
+  color: #56ca00;
+  border: 1px solid #56ca00;
 }
 
 .approve-btn:hover {
-  background-color: #56CA0049;
+  background-color: #56ca0049;
 }
 
 .reject-btn .button-icon,
@@ -2397,10 +2447,10 @@ form .fromBottom2 {
 }
 
 .boostpost-wraper {
-  border: 1px solid #D1CFD4;
+  border: 1px solid #d1cfd4;
   border-radius: 10px;
   padding: 15px 30px;
-  background: #F2F3F5;
+  background: #f2f3f5;
 }
 
 .boostpost-header {
@@ -2409,7 +2459,7 @@ form .fromBottom2 {
 }
 
 .boostpost-header h2 {
-  color: #26A7DC;
+  color: #26a7dc;
   font-size: 29px;
 }
 
@@ -2438,10 +2488,8 @@ form .fromBottom2 {
 .boostpost-footer h2 {
   font-size: 36px;
   font-weight: 600;
-  color: #1E1E1E;
+  color: #1e1e1e;
 }
-
-
 
 .boostpost-footer p {
   color: #000;
@@ -2468,7 +2516,6 @@ form .fromBottom2 {
   overflow-x: auto;
 
   -webkit-overflow-scrolling: touch;
-
 }
 
 .point-row {
@@ -2482,12 +2529,10 @@ form .fromBottom2 {
   color: rgb(46 38 61 / 70%);
 }
 
-
-
 .point-acc-left,
 .point-acc-right {
   background: white;
-  border: 1px solid #D1CFD4;
+  border: 1px solid #d1cfd4;
   border-radius: 10px;
   padding: 24px;
 }
@@ -2500,7 +2545,7 @@ form .fromBottom2 {
 }
 
 .add-point-acc {
-  color: #3B93CF;
+  color: #3b93cf;
   margin-left: 20px;
 }
 
@@ -2533,7 +2578,6 @@ form .fromBottom2 {
   align-items: center;
 }
 
-
 .point-table p {
   color: rgb(46 38 61 / 70%);
   font-size: 15px;
@@ -2547,7 +2591,7 @@ form .fromBottom2 {
 .pointInputDecrease {
   width: 48px;
   height: 41px;
-  border: 1px solid #D1CFD4;
+  border: 1px solid #d1cfd4;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -2559,13 +2603,12 @@ form .fromBottom2 {
 }
 
 .pointInputIncrease {
-  color: #34C759 !important;
+  color: #34c759 !important;
 }
 
 .pointInputDecrease {
-  color: #FF3B30 !important;
+  color: #ff3b30 !important;
 }
-
 
 .btn-crud img {
   width: 16px;
@@ -2583,7 +2626,6 @@ form .fromBottom2 {
 .blank-day {
   width: 90px;
 }
-
 
 .starRating-wrap {
   margin: 0px 0 20px;
@@ -2622,7 +2664,7 @@ form .fromBottom2 {
 
 .starRating-img p {
   font-size: 14px;
-  color: #1F458A;
+  color: #1f458a;
 }
 
 .starRating-img-inner {
@@ -2653,7 +2695,7 @@ form .fromBottom2 {
 }
 
 .rating-dis-btn button {
-  color: #3B93CF;
+  color: #3b93cf;
   background: transparent;
   border: none;
 }
@@ -2672,7 +2714,7 @@ form .fromBottom2 {
 
 .messageTO {
   width: 200px;
-  background: #D9D9D9;
+  background: #d9d9d9;
   border: none;
   padding: 2px 10px;
   border-radius: 8px;
@@ -2683,7 +2725,8 @@ form .fromBottom2 {
   align-items: center;
 }
 
-.messageTO p {}
+.messageTO p {
+}
 
 .messageTO img {
   width: 12px;
@@ -2698,8 +2741,8 @@ form .fromBottom2 {
 }
 
 .roleModal .checkbox-list input[type='checkbox']:checked {
-  background-color: #17B6E5;
-  border-color: #17B6E5;
+  background-color: #17b6e5;
+  border-color: #17b6e5;
 }
 
 #likepost {
@@ -2731,22 +2774,21 @@ form .fromBottom2 {
 }
 
 .notifi-card {
-  background: #F1F5F9;
+  background: #f1f5f9;
   border-radius: 10px;
   padding: 20px;
   display: flex;
   align-items: center;
   gap: 8px;
-  box-shadow: 6px 6px 12px 0 #D4E0EB;
+  box-shadow: 6px 6px 12px 0 #d4e0eb;
 }
-
 
 .notifi-circle span {
   display: block;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #954DE1;
+  background: #954de1;
 }
 
 .notifi-imgBox {
@@ -2768,7 +2810,6 @@ form .fromBottom2 {
   gap: 6px;
 }
 
-
 .notifi-imgBox p {
   font-size: 14px;
   font-weight: 500;
@@ -2778,7 +2819,7 @@ form .fromBottom2 {
 .notifi-time p {
   font-size: 14px;
   font-style: italic;
-  color: #5A5A5A;
+  color: #5a5a5a;
 }
 
 .templateArea {
@@ -2788,7 +2829,7 @@ form .fromBottom2 {
 }
 
 .template-header {
-  background: #E0E0E0;
+  background: #e0e0e0;
   padding: 6px 16px;
   display: flex;
   overflow-x: auto;
@@ -2858,7 +2899,7 @@ form .fromBottom2 {
 .template-body h2 {
   font-size: 15px;
   font-weight: 700;
-  color: #2E263D;
+  color: #2e263d;
 }
 
 .template-body p {
@@ -2867,12 +2908,11 @@ form .fromBottom2 {
   margin-top: 10px;
 }
 
-
 .faq-item {
   background: #f2f3f5;
-  border: 1px solid #D1CFD4;
+  border: 1px solid #d1cfd4;
   margin-bottom: 10px;
-  border-top: 1px solid #D1CFD4 !important;
+  border-top: 1px solid #d1cfd4 !important;
   border-bottom-right-radius: 10px !important;
   border-bottom-left-radius: 10px !important;
   border-top-left-radius: 10px !important;
@@ -2936,7 +2976,11 @@ form .fromBottom2 {
 #emailTemplate-hero {
   width: 100%;
   height: 444px;
-  background: linear-gradient(90deg, rgba(70, 20, 202, 1) 0%, rgba(149, 77, 225, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(70, 20, 202, 1) 0%,
+    rgba(149, 77, 225, 1) 100%
+  );
   position: relative;
 }
 
@@ -2947,10 +2991,10 @@ form .fromBottom2 {
 }
 
 .community-card {
-  background: #F1F5F9;
+  background: #f1f5f9;
   padding: 60px;
   border-radius: 10px;
-  box-shadow: -6px -6px 12px #D4E0EB;
+  box-shadow: -6px -6px 12px #d4e0eb;
 }
 
 .approval-icon {
@@ -2961,7 +3005,7 @@ form .fromBottom2 {
 .approval-title {
   font-size: 40px;
   font-weight: 600;
-  color: #4A17CB;
+  color: #4a17cb;
   text-align: center;
   padding: 16px 0;
 }
@@ -2985,10 +3029,10 @@ form .fromBottom2 {
 }
 
 .help-section {
-  background: #F1F5F9;
+  background: #f1f5f9;
   margin-top: 20px;
   border-radius: 10px;
-  box-shadow: -6px -6px 12px #FFFFFF;
+  box-shadow: -6px -6px 12px #ffffff;
   padding: 40px;
   text-align: center;
 }
@@ -3004,7 +3048,7 @@ form .fromBottom2 {
   border: none;
   font-size: 24px;
   font-weight: 700;
-  color: #4A17CB;
+  color: #4a17cb;
 }
 
 .emailTemplate-body {
@@ -3013,7 +3057,7 @@ form .fromBottom2 {
 }
 
 .reject-title {
-  color: #FF4C51;
+  color: #ff4c51;
 }
 
 /* 
@@ -3321,7 +3365,6 @@ form .fromBottom2 {
 }
 
 @media (max-width: 36rem) {
-
   /* 576px */
   .userName {
     min-width: 190px;
@@ -3377,7 +3420,6 @@ form .fromBottom2 {
 }
 
 @media (prefers-reduced-motion: reduce) {
-
   *,
   *::before,
   *::after {
@@ -3387,7 +3429,6 @@ form .fromBottom2 {
 }
 
 @media (forced-colors: active) {
-
   .userActive,
   .userInactive {
     border: 1px solid currentColor;
@@ -3400,7 +3441,6 @@ form .fromBottom2 {
 
 @media (max-width: 1650px) {
   .boostpost-footer p {
-
     font-size: 16px;
   }
 }
@@ -3414,9 +3454,7 @@ form .fromBottom2 {
   .boostpost-footer h2,
   .boostpost-header h2 {
     font-size: 26px;
-
   }
-
 }
 
 @media (max-width: 1250px) {
@@ -3467,33 +3505,26 @@ form .fromBottom2 {
   }
 
   .boostpost-header h2 {
-
     font-size: 28px;
   }
 
   .boostpost-header p {
-
     font-size: 16px;
   }
 
   .boostpost-footer h2 {
     font-size: 32px;
-
   }
 
   .boostpost-footer p {
-
     font-size: 16px;
   }
 
   #emailTemplate-hero {
-
     height: 380px;
-
   }
 
   .emailTemplate-body {
-
     margin-top: -238px;
   }
 
@@ -3508,7 +3539,6 @@ form .fromBottom2 {
 
   .brand-logo {
     width: 280px;
-
   }
 
   .welcome-text {
@@ -3521,11 +3551,7 @@ form .fromBottom2 {
   .help-section p,
   .help-button {
     font-size: 20px;
-
   }
-
-
-
 }
 
 @media (max-width: 991.98px) {
@@ -3594,7 +3620,6 @@ form .fromBottom2 {
     gap: 25px;
     width: 190px;
   }
-
 }
 
 @media (max-width: 767px) {
@@ -3613,7 +3638,6 @@ form .fromBottom2 {
   .tab-header {
     padding-bottom: 12px;
   }
-
 
   .edit-btn button {
     font-size: 12px;
@@ -3648,7 +3672,6 @@ form .fromBottom2 {
   }
 
   .boostpost-header h2 {
-
     font-size: 22px;
   }
 
@@ -3657,23 +3680,19 @@ form .fromBottom2 {
   }
 
   .boostpost-header p {
-
     font-size: 14px;
   }
 
   .boostpost-footer h2 {
     font-size: 24px;
-
   }
 
   .boostpost-footer p {
-
     font-size: 14px;
   }
 
   .boostpost-footer h5 {
     font-size: 10px;
-
   }
 
   .notifi-circle,
@@ -3683,18 +3702,14 @@ form .fromBottom2 {
 
   .notifi-imgBox h3 {
     font-size: 16px;
-
   }
 
   .notifi-imgBox p {
     font-size: 12px;
-
   }
 
   .notifi-card {
-
     gap: 20px;
-
   }
 
   .notifiMsgmodal .modal-content {
@@ -3707,31 +3722,23 @@ form .fromBottom2 {
   }
 
   .faq-date {
-
     display: none;
   }
 
   .accordion-button {
-
     padding: 10px;
-
   }
 
   .faq-answer {
-
     padding: 0 10px 10px;
   }
 
   #emailTemplate-hero {
-
     height: 200px;
-
   }
 
   .emailTemplate-body {
-
     margin-top: -120px;
-
   }
 
   .approval-icon {
@@ -3739,14 +3746,11 @@ form .fromBottom2 {
   }
 
   .community-card {
-
     padding: 40px 20px;
-
   }
 
   .approval-title {
     font-size: 24px;
-
   }
 
   .brand-logo {
@@ -3762,7 +3766,6 @@ form .fromBottom2 {
   .help-section p,
   .help-button {
     font-size: 14px;
-
   }
 
   .help-section {
@@ -3814,7 +3817,6 @@ form .fromBottom2 {
 }
 
 @media (max-width: 412px) {
-
   .tablist li:first-child::after,
   .tablist li::after {
     bottom: -6px;
@@ -3831,12 +3833,10 @@ form .fromBottom2 {
   }
 
   .adPosition-middle {
-
     height: auto;
   }
 
   .adPosition-wraper {
-
     height: 194px;
   }
 
@@ -3847,22 +3847,17 @@ form .fromBottom2 {
 
   .adPosition-left {
     width: 60px;
-
   }
 
   .adPosition-left-2 p {
     font-size: 12px;
-
   }
 
   .adPosition-right {
     width: 64px;
-
   }
 
   .adPosition-right-inner {
-
     height: 48px;
-
   }
 }
